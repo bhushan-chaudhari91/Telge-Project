@@ -178,7 +178,7 @@ body {}
 .bar-button-pro {
     margin: 13px 0px;
 	font-size:16px;
-	color:#fff;
+	color: #0e0808;
 }
 #sidebar .sidebar-header strong {
     display: none;
@@ -467,7 +467,7 @@ body {}
 }
 .header-right-info ul.header-right-menu > li > a{
 	display:inline-block;
-	color:#fff;
+	color:#0e0808;
 	padding: 0px 0px 0px 20px;
 	font-size:20px;
 	text-decoration:none;
@@ -493,7 +493,7 @@ body {}
 }
 .header-right-info .admin-name{
 	display: inline-block;
-    color: #fff;
+    color: #0e0808;
     font-size: 16px;
     position: relative;
     top: -2px;
@@ -3650,7 +3650,7 @@ div#sparklinehome canvas {
     width: 100% !important;
 }
 .header-top-area {
-    background: #006DF0;
+    background: #ffffff;
 }
 .sidebar-nav .metismenu{
 	background: #fff;
@@ -3743,7 +3743,7 @@ div#sparklinehome canvas {
     background: #fff;
 }
 .indicator-nt {
-    background: #fff;
+    background: #0e0808;
 }
 .menu-setting-wrap.menu-setting-wrap-bg .nav-tabs>li.active>a, .menu-setting-wrap.menu-setting-wrap-bg .nav-tabs>li.active>a:focus, .menu-setting-wrap.menu-setting-wrap-bg .nav-tabs>li.active>a:hover
  .notes-img {
