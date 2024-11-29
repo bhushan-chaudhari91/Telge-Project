@@ -42,7 +42,7 @@
 /*----------------------------------------*/
 /*  1. Common
 /*----------------------------------------*/
-html, body {height: 100%; font-family: 'Roboto', sans-serif;font-weight:400;background:#F6F8FA;}
+html, body {height: 100%; font-family: 'Roboto', sans-serif;font-weight:400;background:#ffffff;}
 .floatleft {float:left}
 .floatright {float:right}
 .alignleft {float:left;margin-right:15px;margin-bottom: 15px}
@@ -4719,3 +4719,449 @@ div#sparklinehome canvas {
 	color:#fff;
 	text-decoration:none;
 }
+
+
+/* First Screen CSS Code Start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.header input {
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #f4f7fc;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+
+.add-task-btn {
+    padding: 10px 20px;
+    background-color: #95a4fc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.add-task-btn:hover {
+    background-color: #45a049;
+}
+
+.sort-filter select {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
+
+.dropdown select {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 170px;
+    text-align: center;
+}
+
+.task-container {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.task-column {
+    width: 18%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.task-column h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.new-tasks {
+    background-color: #e1f5fe;
+}
+
+.pending-tasks {
+    background-color: #f5f5f5;
+}
+
+.ongoing-tasks {
+    background-color: #e8f5e9;
+}
+
+.red-flag-tasks {
+    background-color: #ffebee;
+}
+
+.completed-tasks {
+    background-color: #e3f2fd;
+}
+
+
+
+
+
+
+.task-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    width: 172px;
+    margin-left: -5px;
+}
+
+
+
+
+/* .task-Firstcard {
+background-color: #95A4FC33;
+border-radius: 15px;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+position: relative;
+font-family: 'Arial', sans-serif;
+width: calc(20% - 16px); 
+min-width: 200px; 
+max-width: 240px; 
+}
+
+@media (max-width: 1200px) {
+.task-Firstcard {
+width: calc(25% - 16px); 
+}
+}
+
+@media (max-width: 900px) {
+.task-Firstcard {
+width: calc(33.33% - 16px); 
+}
+}
+
+@media (max-width: 600px) {
+.task-Firstcard {
+width: calc(50% - 16px); 
+}
+}
+
+@media (max-width: 400px) {
+.task-Firstcard {
+width: 100%; 
+}
+} */
+
+
+
+
+
+.task-Fivecard{
+    background-color: #F5F9FF;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    width: 200px;
+}
+
+.task-Fourcard{
+    background-color: #FCD9D6;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    width: 200px;
+}
+
+.task-Thirdcard{
+    background-color: #EAFAEB;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    width: 200px;
+}
+
+.task-Secondcard{
+    background-color: #D2D2D2;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    width: 200px;
+}
+
+.task-Firstcard{
+    background-color: #95A4FC33;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    width: 200px;
+}
+
+
+
+
+
+.new-tasks-btn-five{
+    background-color: #DEECFF;
+    color: white;
+    font-size: 14px;
+    /* font-weight: bold; */
+    border: none;
+    border-radius: 50px; 
+    padding: 10px 13px; 
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.new-tasks-btn-four{
+    background-color: #F04034;
+    color: white;
+    font-size: 14px;
+    /* font-weight: bold; */
+    border: none;
+    border-radius: 50px; 
+    padding: 10px 21px; 
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.new-tasks-btn-third{
+
+    background-color: #BAEDBD;
+    color: white;
+    font-size: 14px;
+    /* font-weight: bold; */
+    border: none;
+    border-radius: 50px; 
+    padding: 10px 22px; 
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin: 0 auto; 
+    text-align: center;
+
+}
+
+.new-tasks-btn-Second{
+    background-color: #1C1C1C;
+    color: white;
+    font-size: 14px;
+    /* font-weight: bold; */
+    border: none;
+    border-radius: 50px; 
+    padding: 10px 24px; 
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.new-tasks-btn {
+    background-color: #95A4FC;
+    color: white;
+    font-size: 14px;
+    /* font-weight: bold; */
+    border: none;
+    border-radius: 50px; 
+    padding: 10px 38px; 
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.new-tasks-btn:hover {
+    background-color: #218838; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.new-tasks-btn-Second:hover {
+    background-color: #218838; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.new-tasks-btn-third:hover {
+    background-color: #218838; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.new-tasks-btn-four:hover {
+    background-color: #218838; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.new-tasks-btn-five:hover {
+    background-color: #218838; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+
+.task-card h4 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-card span {
+    font-size: 8px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.task-card p {
+    font-size: 10px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.task-card p span {
+    color: red;
+    font-weight: bold;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.progress-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 5px solid #e0e0e0;
+    border-top-color: #95A4FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+    position: relative;
+    margin-left: 73px;
+    margin-top: -33px;
+}
+
+.progress-circle span {
+    position: absolute;
+    font-size: 10px;
+    color: #888;
+    bottom: -10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+    border-radius: 2.5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar div {
+    height: 100%;
+    width: 60%; 
+    background-color: #000000;
+}
+
+.add-subtasks {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 10px;
+    color: #000000;
+    border: 2px dashed #aba1a1;
+    border-radius: 10px;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.add-subtasks:hover {
+    background-color: #e8f5e9;
+}
+
+
+
+
+
+/* End */
+
+
+.row {
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+/* .col-2 {
+    flex: 0 0 16.666%; 
+    max-width: 16.666%;
+} */
+
+/* @media (max-width: 768px) {
+    .col-2 {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+} */
