@@ -1383,46 +1383,267 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-
+                        <div id="extra-area-chart" style="height: 200px;"></div>
                     </div>
 
                 </div>
             </div>
         </div>
+
+
+
         <div class="product-sales-area mg-tb-30">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+
                         <div class="product-sales-chart">
                             <div class="portlet-title">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="caption pro-sl-hd">
-                                            <span class="caption-subject"><b>University Earnings</b></span>
-                                        </div>
+                                    <div>
+                                        <style>
+                                            /* General Container */
+                                            .container {
+                                                margin: 20px;
+                                            }
+
+                                            /* Week Labels */
+                                            .week-labels {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                margin-bottom: 20px;
+                                                font-weight: bold;
+                                                width: 80%;
+                                            }
+
+                                            .week-labels span {
+                                                text-align: center;
+                                                flex: 1;
+
+                                            }
+
+                                            /* Timeline Structure */
+                                            .timeline-container {
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 20px;
+                                                width: 80%;
+                                            }
+
+                                            .project-row {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+
+                                            .project-name {
+                                                width: 150px;
+                                                font-weight: bold;
+                                            }
+
+                                            .timeline-bar-container {
+                                                position: relative;
+                                                flex-grow: 1;
+                                                height: 30px;
+                                                background-color: #f2f2f2;
+                                                margin-left: 20px;
+                                                border-radius: 5px;
+                                                max-width: 60%;
+                                            }
+
+                                            .progress-bar {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                height: 100%;
+                                                background-color: #4CAF50;
+                                                border-radius: 5px;
+                                            }
+                                        </style>
+                                        </head>
+
+                                        <body>
+                                            <div class="container">
+                                                <!-- Week Labels -->
+                                                <div class="week-labels" id="weekLabels">
+                                                    <h5>Ongoing Projects</h5>
+                                                </div>
+
+                                                <!-- Timeline Container -->
+                                                <div class="timeline-container" id="timelineContainer">
+                                                    <!-- Dynamically populated project rows -->
+                                                </div>
+                                            </div>
+
+
+
+                                            <script>
+                                                // Sample Project Data
+                                                const projects = [
+                                                    { name: "Project 1", startDate: new Date(2024, 10, 27), endDate: new Date(2024, 11, 10) },
+                                                    { name: "Project 2", startDate: new Date(2024, 10, 29), endDate: new Date(2024, 11, 15) },
+                                                    { name: "Project 3", startDate: new Date(2024, 11, 1), endDate: new Date(2024, 11, 20) },
+                                                    { name: "Project 4", startDate: new Date(2024, 11, 5), endDate: new Date(2024, 11, 12) },
+                                                    { name: "Project 1", startDate: new Date(2024, 10, 27), endDate: new Date(2024, 11, 10) },
+                                                    { name: "Project 2", startDate: new Date(2024, 10, 29), endDate: new Date(2024, 11, 15) },
+                                                    { name: "Project 3", startDate: new Date(2024, 11, 1), endDate: new Date(2024, 11, 20) },
+                                                    { name: "Project 4", startDate: new Date(2024, 11, 5), endDate: new Date(2024, 11, 12) }
+                                                ];
+
+                                                // Determine the ongoing start date (first project's start date)
+                                                const startDate = new Date(projects[0].startDate);
+
+                                                // Calculate the latest end date among all projects
+                                                const latestEndDate = projects.reduce((latest, project) => {
+                                                    return project.endDate > latest ? project.endDate : latest;
+                                                }, projects[0].endDate);
+
+                                                // Function to calculate week date ranges
+                                                function getWeekDateRange(weekNumber) {
+                                                    const weekStart = new Date(startDate);
+                                                    weekStart.setDate(startDate.getDate() + (weekNumber - 1) * 7); // Start date of the week
+                                                    const weekEnd = new Date(weekStart);
+                                                    weekEnd.setDate(weekStart.getDate() + 6); // End date of the week
+
+                                                    const formatDate = (date) => {
+                                                        const day = date.getDate();
+                                                        const month = date.toLocaleDateString('en-US', { month: 'short' }); // Get short month name
+                                                        return `${day}-${month}`;
+                                                    };
+
+                                                    return `${formatDate(weekStart)} to ${formatDate(weekEnd)}`;
+                                                }
+
+                                                // Function to calculate the total number of weeks based on the latest end date
+                                                function calculateTotalWeeks() {
+                                                    return Math.ceil((latestEndDate - startDate) / (1000 * 60 * 60 * 24 * 7)); // Total weeks
+                                                }
+
+                                                // Function to populate the week labels
+                                                function populateWeekLabels() {
+                                                    const totalWeeks = calculateTotalWeeks();
+
+                                                    const weekLabelsContainer = document.querySelector('.week-labels');
+                                                    for (let i = 1; i <= totalWeeks; i++) {
+                                                        const span = document.createElement("span");
+                                                        span.textContent = `Week ${i} (${getWeekDateRange(i)})`;
+                                                        span.classList.add("week-label");
+                                                        weekLabelsContainer.appendChild(span);
+                                                    }
+                                                }
+
+                                                // Function to calculate the position and width of the progress bar
+                                                function getProgressBarPosition(project) {
+                                                    const projectStartWeek = Math.floor((project.startDate - startDate) / (1000 * 60 * 60 * 24 * 7)) + 1;
+                                                    const projectEndWeek = Math.ceil((project.endDate - startDate) / (1000 * 60 * 60 * 24 * 7)) + 1;
+
+                                                    const spanWeeks = projectEndWeek - projectStartWeek + 1;
+
+                                                    return { start: projectStartWeek, spanWeeks };
+                                                }
+
+                                                // Function to generate the graphical timeline bar for each project
+                                                function generateProjectTimeline(project) {
+                                                    const timelineContainer = document.getElementById("timelineContainer");
+
+                                                    // Create a row for the project
+                                                    const projectRow = document.createElement("div");
+                                                    projectRow.classList.add("project-row");
+
+                                                    // Project name label
+                                                    const projectName = document.createElement("div");
+                                                    projectName.classList.add("project-name");
+                                                    projectName.textContent = project.name;
+                                                    projectRow.appendChild(projectName);
+
+                                                    // Timeline bar container
+                                                    const timelineBarContainer = document.createElement("div");
+                                                    timelineBarContainer.classList.add("timeline-bar-container");
+
+                                                    // Get the start and end week for the project
+                                                    const { start, spanWeeks } = getProgressBarPosition(project);
+
+                                                    // Calculate the width of the progress bar
+                                                    const progressWidth = (100 / calculateTotalWeeks()) * spanWeeks;
+
+                                                    // Create the progress bar
+                                                    const progressBar = document.createElement("div");
+                                                    progressBar.classList.add("progress-bar");
+                                                    progressBar.style.left = `${((start - 1) * 100) / calculateTotalWeeks()}%`; // Position the bar
+                                                    progressBar.style.width = `${progressWidth}%`; // Set the width of the bar
+
+                                                    // Append the progress bar to the timeline container
+                                                    timelineBarContainer.appendChild(progressBar);
+                                                    projectRow.appendChild(timelineBarContainer);
+
+                                                    // Append the project row to the timeline container
+                                                    timelineContainer.appendChild(projectRow);
+                                                }
+
+                                                // Populate the week labels and generate the timeline for each project
+                                                populateWeekLabels();
+                                                projects.forEach(generateProjectTimeline);
+                                            </script>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="actions graph-rp graph-rp-dl">
-                                            <p>All Earnings are in million $</p>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
-                            <ul class="list-inline cus-product-sl-rp">
-                                <li>
-                                    <h5><i class="fa fa-circle" style="color: #006DF0;"></i>CSE</h5>
-                                </li>
-                                <li>
-                                    <h5><i class="fa fa-circle" style="color: #933EC5;"></i>Accounting</h5>
-                                </li>
-                                <li>
-                                    <h5><i class="fa fa-circle" style="color: #65b12d;"></i>Electrical</h5>
-                                </li>
-                            </ul>
-                            <div id="extra-area-chart" style="height: 356px;"></div>
+
+                            <!-- <div id="extra-area-chart" style="height: 356px;"></div> -->
                         </div>
+
+
+
+
+
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="single-review-st-item res-mg-t-30 table-mg-t-pro-n">
+                            <div class="single-review-st-hd">
+                                <div class="main-sparkline11-hd">
+                                    <h1>Ongoing Task</h1>
+                                </div>
+
+                            </div>
+                            <div class="single-review-st-text">
+                                <div class="idiv">
+                                    <i class="bi bi-circle-fill i1" style="color:green"></i>
+                                </div>
+                                <div class="review-ctn-hf">
+                                    <p>Project Name </p>
+                                    <p>Assigned Team Lead</p>
+                                </div>
+                                <div class="review-item-rating">
+                                    <p style="color: green;">Ongoing </p>
+                                </div>
+                            </div>
+                            <div class="single-review-st-text">
+                                <div class="idiv">
+                                    <i class="bi bi-circle-fill i1" style="color:red"></i>
+                                </div>
+                                <div class="review-ctn-hf">
+                                    <p>Project Name </p>
+                                    <p>Assigned Team Lead</p>
+                                </div>
+                                <div class="review-item-rating">
+                                    <p style="color: red;">Pending </p>
+                                </div>
+                            </div>
+                            <div class="single-review-st-text">
+                                <div class="idiv">
+                                    <i class="bi bi-circle-fill i1" style="color:grey"></i>
+                                </div>
+                                <div class="review-ctn-hf">
+                                    <p>Project Name </p>
+                                    <p>Assigned Team Lead</p>
+                                </div>
+                                <div class="review-item-rating">
+                                    <p style="color: grey;">Completed </p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
                         <div
                             class="white-box analytics-info-cs mg-b-10 res-mg-b-30 res-mg-t-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n">
                             <h3 class="box-title">Total Visit</h3>
@@ -1471,7 +1692,12 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
+
+
+
         <div class="traffic-analysis-area">
             <div class="container-fluid">
                 <div class="row">
