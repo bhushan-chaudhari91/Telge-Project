@@ -5165,3 +5165,397 @@ width: 100%;
         max-width: 100%;
     }
 } */
+
+
+
+
+
+
+/* Add New Task Page CSS Start */
+
+  /* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  } */
+  
+  /* .task-form-container {
+    background-color: #f0f4ff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+  }
+  
+  .task-form h2 {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #7b7b7b;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    padding: 10px;
+    border: 1px solid #d0d7f0;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input::placeholder {
+    color: #b0b3c7;
+  }
+  
+  .priority-row {
+    align-items: center;
+  }
+  
+  .priority-options {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-btn {
+    background-color: #4a63e7;
+    color: white;
+  }
+  
+  .create-btn:hover {
+    background-color: #3a52d1;
+  }
+  
+  .cancel-btn {
+    background-color: #f4f4f4;
+    color: #7b7b7b;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e0e0e0;
+  } */
+  
+
+  /* General Form Styling */
+.task-form-container {
+    background-color: #f4f7fc;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    /* font-size: 1.75rem; */
+    font-size: 22px;
+    color: #3f4a59;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 12px;
+    transition: border 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Task Priority */
+.priority-options label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #3e5cc9;
+}
+
+.btn-secondary {
+    background-color: #868e96;
+    border-color: #868e96;
+    color: white;
+    transition: background-color 0.3s;
+    margin-left: 50px;
+}
+
+.btn-secondary:hover {
+    background-color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .form-title {
+        text-align: center;
+    }
+
+    .form-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .priority-options label {
+        margin-right: 15px;
+    }
+    
+}
+
+.containerOne {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (min-width: 1200px) {
+    .containerOne {
+        width: 1100px;
+    }
+}
+
+
+/* Add New Task Page CSS End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.table th {
+    background-color: #2b74e7;
+    color: #ffffff;
+}
+
+.table td {
+    background-color: #f9f9f9;
+}
+
+.total-row td {
+    font-weight: bold;
+    background-color: #e6f0ff;
+}
+
+.overtime-row td {
+    background-color: #fff0f0;
+}
+
+.search-box {
+    padding: 8px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.date-picker {
+    padding: 8px;
+    width: 200px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.table-container .table-bordered {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.table-container .table th, .table-container .table td {
+    border: 1px solid #dee2e6;
+} */
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 220px;
+}
+
+/* .date-picker {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    width: 250px;
+} */
+
+.date-picker-container {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #f4f7fc;
+}
+.date-picker-container i {
+    margin-right: 5px;
+}
+#datePicker span {
+    margin-left: 5px;
+}
+
+.task-table {
+    width: 100%;
+    /* border-collapse: collapse;
+    margin-top: 20px; */
+    border-collapse: unset;
+    border-spacing: 0;
+}
+
+.task-table th {
+    background-color: #8CBAFF;
+    color: #000000;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    width: 630px;
+}
+
+.task-table td {
+    /* background-color: #F9F9F9; */
+    background-color: #e9f2fb;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.task-table tbody tr:nth-child(even) td {
+    background-color: #E9F2FB;
+}
+
+.total-row td {
+    font-weight: bold;
+    background-color: #E0F7FA;
+}
+
+.overtime-row td {
+    background-color: #F9F9F9;
+}
+
+.task-table th, .task-table td {
+    /* border: 1px solid #ccc; */
+    border: 1px solid #F9F9F9;
+    border-radius: 10px;
+}
+
+.containerTwo {
+    max-width: 1125px;
+    margin: 0 auto;
+}
