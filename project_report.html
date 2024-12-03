@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Payment | Kiaalap - Kiaalap Admin Template</title>
+    <title>Dashboard | Mitroz Technologies</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <!-- Google Fonts
 		============================================ -->
-    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <!-- Bootstrap CSS
 		============================================ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -59,12 +59,65 @@
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/custome.css">
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+    <style>
+        /* Modal Background */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #f9f9f9;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .sort-filter select {
+            width: 100%;
+            height: fit-content;
+        }
+
+        .header-nav input {
+
+            margin-left: 30px;
+
+        }
+
+        .btns-reposts {
+            margin-left: 60px;
+            display: inline-block;
+        }
+
+        .project-report {
+            margin: 10px 10px 10px;
+            border-radius: 15px;
+            padding: 10px;
+            width: 200px;
+            color: #202023;
+        }
+    </style>
+
 </head>
 
-<body>
+<body style="overflow-x: clip;">
     <!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -72,229 +125,48 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
+                <a href="index.html"><img class="main-logo" src="img/New/logo.png" alt="" /></a>
                 <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
-                        <li>
-                            <a class="has-arrow" href="index.html">
-                                <span class="educate-icon educate-home icon-wrap"></span>
-                                <span class="mini-click-non">Education</span>
-                            </a>
-                            <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard
-                                            v.1</span></a></li>
-                                <li><a title="Dashboard v.2" href="index-1.html"><span class="mini-sub-pro">Dashboard
-                                            v.2</span></a></li>
-                                <li><a title="Dashboard v.3" href="index-2.html"><span class="mini-sub-pro">Dashboard
-                                            v.3</span></a></li>
-                                <li><a title="Analytics" href="analytics.html"><span
-                                            class="mini-sub-pro">Analytics</span></a></li>
-                                <li><a title="Widgets" href="widgets.html"><span class="mini-sub-pro">Widgets</span></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a title="Landing Page" href="events.html" aria-expanded="false"><span
-                                    class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span>
-                                <span class="mini-click-non">Event</span></a>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span
-                                    class="educate-icon educate-professor icon-wrap"></span> <span
-                                    class="mini-click-non">Professors</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Professors" href="all-professors.html"><span class="mini-sub-pro">All
-                                            Professors</span></a></li>
-                                <li><a title="Add Professor" href="add-professor.html"><span class="mini-sub-pro">Add
-                                            Professor</span></a></li>
-                                <li><a title="Edit Professor" href="edit-professor.html"><span class="mini-sub-pro">Edit
-                                            Professor</span></a></li>
-                                <li><a title="Professor Profile" href="professor-profile.html"><span
-                                            class="mini-sub-pro">Professor Profile</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="all-students.html" aria-expanded="false"><span
-                                    class="educate-icon educate-student icon-wrap"></span> <span
-                                    class="mini-click-non">Students</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" href="all-students.html"><span class="mini-sub-pro">All
-                                            Students</span></a></li>
-                                <li><a title="Add Students" href="add-student.html"><span class="mini-sub-pro">Add
-                                            Student</span></a></li>
-                                <li><a title="Edit Students" href="edit-student.html"><span class="mini-sub-pro">Edit
-                                            Student</span></a></li>
-                                <li><a title="Students Profile" href="student-profile.html"><span
-                                            class="mini-sub-pro">Student Profile</span></a></li>
-                            </ul>
-                        </li>
+
+
                         <li class="active">
-                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span
-                                    class="educate-icon educate-course icon-wrap"></span> <span
-                                    class="mini-click-non">Courses</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Courses" href="all-courses.html"><span class="mini-sub-pro">All
-                                            Courses</span></a></li>
-                                <li><a title="Add Courses" href="add-course.html"><span class="mini-sub-pro">Add
-                                            Course</span></a></li>
-                                <li><a title="Edit Courses" href="edit-course.html"><span class="mini-sub-pro">Edit
-                                            Course</span></a></li>
-                                <li><a title="Courses Profile" href="course-info.html"><span
-                                            class="mini-sub-pro">Courses Info</span></a></li>
-                                <li><a title="course Payment" href="course-payment.html"><span
-                                            class="mini-sub-pro">Courses Payment</span></a></li>
-                            </ul>
+                            <a style="margin-top: 100px;" href="index.html"><span
+                                    class="educate-icon educate-home icon-wrap"></span> <span
+                                    class="mini-click-non">Dashboard</span></a>
                         </li>
+
                         <li>
-                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span
-                                    class="educate-icon educate-library icon-wrap"></span> <span
-                                    class="mini-click-non">Library</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Library" href="library-assets.html"><span class="mini-sub-pro">Library
-                                            Assets</span></a></li>
-                                <li><a title="Add Library" href="add-library-assets.html"><span class="mini-sub-pro">Add
-                                            Library Asset</span></a></li>
-                                <li><a title="Edit Library" href="edit-library-assets.html"><span
-                                            class="mini-sub-pro">Edit Library Asset</span></a></li>
-                            </ul>
+                            <a title="Landing Page" href="Project-Management.html" aria-expanded="false"><span
+                                    class="educate-icon educate-apps icon-wrap" aria-hidden="true"></span> <span
+                                    class="mini-click-non">Project Management</span></a>
                         </li>
+
                         <li>
-                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span
-                                    class="educate-icon educate-department icon-wrap"></span> <span
-                                    class="mini-click-non">Departments</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Departments List" href="departments.html"><span
-                                            class="mini-sub-pro">Departments List</span></a></li>
-                                <li><a title="Add Departments" href="add-department.html"><span class="mini-sub-pro">Add
-                                            Departments</span></a></li>
-                                <li><a title="Edit Departments" href="edit-department.html"><span
-                                            class="mini-sub-pro">Edit Departments</span></a></li>
-                            </ul>
+                            <a title="Landing Page" href="user_management.html" aria-expanded="false"><span
+                                    class="educate-icon educate-professor icon-wrap" aria-hidden="true"></span> <span
+                                    class="mini-click-non">User Management</span></a>
                         </li>
+
                         <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span
-                                    class="educate-icon educate-message icon-wrap"></span> <span
-                                    class="mini-click-non">Mailbox</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Inbox" href="mailbox.html"><span class="mini-sub-pro">Inbox</span></a>
-                                </li>
-                                <li><a title="View Mail" href="mailbox-view.html"><span class="mini-sub-pro">View
-                                            Mail</span></a></li>
-                                <li><a title="Compose Mail" href="mailbox-compose.html"><span
-                                            class="mini-sub-pro">Compose Mail</span></a></li>
-                            </ul>
+                            <a title="Landing Page" href="index.html" aria-expanded="false"><span
+                                    class="educate-icon educate-charts icon-wrap" aria-hidden="true"></span> <span
+                                    class="mini-click-non">Report & Analysis</span></a>
                         </li>
+
                         <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span
-                                    class="educate-icon educate-interface icon-wrap"></span> <span
-                                    class="mini-click-non">Interface</span></a>
-                            <ul class="submenu-angle interface-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Google Map" href="google-map.html"><span class="mini-sub-pro">Google
-                                            Map</span></a></li>
-                                <li><a title="Data Maps" href="data-maps.html"><span class="mini-sub-pro">Data
-                                            Maps</span></a></li>
-                                <li><a title="Pdf Viewer" href="pdf-viewer.html"><span class="mini-sub-pro">Pdf
-                                            Viewer</span></a></li>
-                                <li><a title="X-Editable" href="x-editable.html"><span
-                                            class="mini-sub-pro">X-Editable</span></a></li>
-                                <li><a title="Code Editor" href="code-editor.html"><span class="mini-sub-pro">Code
-                                            Editor</span></a></li>
-                                <li><a title="Tree View" href="tree-view.html"><span class="mini-sub-pro">Tree
-                                            View</span></a></li>
-                                <li><a title="Preloader" href="preloader.html"><span
-                                            class="mini-sub-pro">Preloader</span></a></li>
-                                <li><a title="Images Cropper" href="images-cropper.html"><span
-                                            class="mini-sub-pro">Images Cropper</span></a></li>
-                            </ul>
+                            <a title="Landing Page" href="index.html" aria-expanded="false"><span
+                                    class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span>
+                                <span class="mini-click-non">Notification</span></a>
                         </li>
+
                         <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span
-                                    class="educate-icon educate-charts icon-wrap"></span> <span
-                                    class="mini-click-non">Charts</span></a>
-                            <ul class="submenu-angle chart-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Bar Charts" href="bar-charts.html"><span class="mini-sub-pro">Bar
-                                            Charts</span></a></li>
-                                <li><a title="Line Charts" href="line-charts.html"><span class="mini-sub-pro">Line
-                                            Charts</span></a></li>
-                                <li><a title="Area Charts" href="area-charts.html"><span class="mini-sub-pro">Area
-                                            Charts</span></a></li>
-                                <li><a title="Rounded Charts" href="rounded-chart.html"><span
-                                            class="mini-sub-pro">Rounded Charts</span></a></li>
-                                <li><a title="C3 Charts" href="c3.html"><span class="mini-sub-pro">C3 Charts</span></a>
-                                </li>
-                                <li><a title="Sparkline Charts" href="sparkline.html"><span
-                                            class="mini-sub-pro">Sparkline Charts</span></a></li>
-                                <li><a title="Peity Charts" href="peity.html"><span class="mini-sub-pro">Peity
-                                            Charts</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span
-                                    class="educate-icon educate-data-table icon-wrap"></span> <span
-                                    class="mini-click-non">Data Tables</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Peity Charts" href="static-table.html"><span class="mini-sub-pro">Static
-                                            Table</span></a></li>
-                                <li><a title="Data Table" href="data-table.html"><span class="mini-sub-pro">Data
-                                            Table</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span
-                                    class="educate-icon educate-form icon-wrap"></span> <span
-                                    class="mini-click-non">Forms Elements</span></a>
-                            <ul class="submenu-angle form-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Basic Form Elements" href="basic-form-element.html"><span
-                                            class="mini-sub-pro">Bc Form Elements</span></a></li>
-                                <li><a title="Advance Form Elements" href="advance-form-element.html"><span
-                                            class="mini-sub-pro">Ad Form Elements</span></a></li>
-                                <li><a title="Password Meter" href="password-meter.html"><span
-                                            class="mini-sub-pro">Password Meter</span></a></li>
-                                <li><a title="Multi Upload" href="multi-upload.html"><span class="mini-sub-pro">Multi
-                                            Upload</span></a></li>
-                                <li><a title="Text Editor" href="tinymc.html"><span class="mini-sub-pro">Text
-                                            Editor</span></a></li>
-                                <li><a title="Dual List Box" href="dual-list-box.html"><span class="mini-sub-pro">Dual
-                                            List Box</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span
-                                    class="educate-icon educate-apps icon-wrap"></span> <span class="mini-click-non">App
-                                    views</span></a>
-                            <ul class="submenu-angle app-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Notifications" href="notifications.html"><span
-                                            class="mini-sub-pro">Notifications</span></a></li>
-                                <li><a title="Alerts" href="alerts.html"><span class="mini-sub-pro">Alerts</span></a>
-                                </li>
-                                <li><a title="Modals" href="modals.html"><span class="mini-sub-pro">Modals</span></a>
-                                </li>
-                                <li><a title="Buttons" href="buttons.html"><span class="mini-sub-pro">Buttons</span></a>
-                                </li>
-                                <li><a title="Tabs" href="tabs.html"><span class="mini-sub-pro">Tabs</span></a></li>
-                                <li><a title="Accordion" href="accordion.html"><span
-                                            class="mini-sub-pro">Accordion</span></a></li>
-                            </ul>
-                        </li>
-                        <li id="removable">
-                            <a class="has-arrow" href="#" aria-expanded="false"><span
-                                    class="educate-icon educate-pages icon-wrap"></span> <span
-                                    class="mini-click-non">Pages</span></a>
-                            <ul class="submenu-angle page-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Login" href="login.html"><span class="mini-sub-pro">Login</span></a></li>
-                                <li><a title="Register" href="register.html"><span
-                                            class="mini-sub-pro">Register</span></a></li>
-                                <li><a title="Lock" href="lock.html"><span class="mini-sub-pro">Lock</span></a></li>
-                                <li><a title="Password Recovery" href="password-recovery.html"><span
-                                            class="mini-sub-pro">Password Recovery</span></a></li>
-                                <li><a title="404 Page" href="404.html"><span class="mini-sub-pro">404 Page</span></a>
-                                </li>
-                                <li><a title="500 Page" href="500.html"><span class="mini-sub-pro">500 Page</span></a>
-                                </li>
-                            </ul>
+                            <a title="Landing Page" href="index.html" aria-expanded="false"><span
+                                    class="educate-icon educate-settings icon-wrap sub-icon-mg"
+                                    aria-hidden="true"></span> <span class="mini-click-non">Settings</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -330,6 +202,10 @@
                                     </div>
                                     <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
                                         <div class="header-top-menu tabl-d-n">
+                                        </div>
+                                        <!-- <div class="header-top-menu tabl-d-n">
+                                                                                    <button class="add-task-btn-nav" id="openModalBtn" style="color: #000000;">+ Add
+
                                             <ul class="nav navbar-nav mai-top-nav">
                                                 <li class="nav-item"><a href="#" class="nav-link">Home</a>
                                                 </li>
@@ -352,7 +228,7 @@
                                                 <li class="nav-item"><a href="#" class="nav-link">Support</a>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                                         <div class="header-right-info">
@@ -377,7 +253,8 @@
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
                                                                         <h2>Advanda Cro</h2>
-                                                                        <p>Please done this project as soon possible.
+                                                                        <p>Please done this project as soon
+                                                                            possible.
                                                                         </p>
                                                                     </div>
                                                                 </a>
@@ -390,7 +267,8 @@
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
                                                                         <h2>Sulaiman din</h2>
-                                                                        <p>Please done this project as soon possible.
+                                                                        <p>Please done this project as soon
+                                                                            possible.
                                                                         </p>
                                                                     </div>
                                                                 </a>
@@ -403,7 +281,8 @@
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
                                                                         <h2>Victor Jara</h2>
-                                                                        <p>Please done this project as soon possible.
+                                                                        <p>Please done this project as soon
+                                                                            possible.
                                                                         </p>
                                                                     </div>
                                                                 </a>
@@ -416,7 +295,8 @@
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
                                                                         <h2>Victor Jara</h2>
-                                                                        <p>Please done this project as soon possible.
+                                                                        <p>Please done this project as soon
+                                                                            possible.
                                                                         </p>
                                                                     </div>
                                                                 </a>
@@ -445,9 +325,11 @@
                                                                             aria-hidden="true"></i>
                                                                     </div>
                                                                     <div class="notification-content">
-                                                                        <span class="notification-date">16 Sept</span>
+                                                                        <span class="notification-date">16
+                                                                            Sept</span>
                                                                         <h2>Advanda Cro</h2>
-                                                                        <p>Please done this project as soon possible.
+                                                                        <p>Please done this project as soon
+                                                                            possible.
                                                                         </p>
                                                                     </div>
                                                                 </a>
@@ -459,9 +341,11 @@
                                                                             aria-hidden="true"></i>
                                                                     </div>
                                                                     <div class="notification-content">
-                                                                        <span class="notification-date">16 Sept</span>
+                                                                        <span class="notification-date">16
+                                                                            Sept</span>
                                                                         <h2>Sulaiman din</h2>
-                                                                        <p>Please done this project as soon possible.
+                                                                        <p>Please done this project as soon
+                                                                            possible.
                                                                         </p>
                                                                     </div>
                                                                 </a>
@@ -473,9 +357,11 @@
                                                                             aria-hidden="true"></i>
                                                                     </div>
                                                                     <div class="notification-content">
-                                                                        <span class="notification-date">16 Sept</span>
+                                                                        <span class="notification-date">16
+                                                                            Sept</span>
                                                                         <h2>Victor Jara</h2>
-                                                                        <p>Please done this project as soon possible.
+                                                                        <p>Please done this project as soon
+                                                                            possible.
                                                                         </p>
                                                                     </div>
                                                                 </a>
@@ -487,9 +373,11 @@
                                                                             aria-hidden="true"></i>
                                                                     </div>
                                                                     <div class="notification-content">
-                                                                        <span class="notification-date">16 Sept</span>
+                                                                        <span class="notification-date">16
+                                                                            Sept</span>
                                                                         <h2>Victor Jara</h2>
-                                                                        <p>Please done this project as soon possible.
+                                                                        <p>Please done this project as soon
+                                                                            possible.
                                                                         </p>
                                                                     </div>
                                                                 </a>
@@ -500,36 +388,25 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="nav-item">
-                                                    <a href="#" data-toggle="dropdown" role="button"
-                                                        aria-expanded="false" class="nav-link dropdown-toggle">
-                                                        <img src="img/product/pro4.jpg" alt="" />
-                                                        <span class="admin-name">Prof.Anderson</span>
-                                                        <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
-                                                    </a>
-                                                    <ul role="menu"
-                                                        class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                        <li><a href="#"><span
-                                                                    class="edu-icon edu-home-admin author-log-ic"></span>My
-                                                                Account</a>
+                                                <!-- <li class="nav-item">
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+															<img src="img/product/pro4.jpg" alt="" />
+															<span class="admin-name">Prof.Anderson</span>
+															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
+														</a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                        <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
                                                         </li>
-                                                        <li><a href="#"><span
-                                                                    class="edu-icon edu-user-rounded author-log-ic"></span>My
-                                                                Profile</a>
+                                                        <li><a href="#"><span class="edu-icon edu-user-rounded author-log-ic"></span>My Profile</a>
                                                         </li>
-                                                        <li><a href="#"><span
-                                                                    class="edu-icon edu-money author-log-ic"></span>User
-                                                                Billing</a>
+                                                        <li><a href="#"><span class="edu-icon edu-money author-log-ic"></span>User Billing</a>
                                                         </li>
-                                                        <li><a href="#"><span
-                                                                    class="edu-icon edu-settings author-log-ic"></span>Settings</a>
+                                                        <li><a href="#"><span class="edu-icon edu-settings author-log-ic"></span>Settings</a>
                                                         </li>
-                                                        <li><a href="#"><span
-                                                                    class="edu-icon edu-locked author-log-ic"></span>Log
-                                                                Out</a>
+                                                        <li><a href="#"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
                                                         </li>
                                                     </ul>
-                                                </li>
+                                                </li> -->
                                                 <li class="nav-item nav-setting-open"><a href="#" data-toggle="dropdown"
                                                         role="button" aria-expanded="false"
                                                         class="nav-link dropdown-toggle"><i
@@ -565,9 +442,12 @@
                                                                                                 alt="" />
                                                                                         </div>
                                                                                         <div class="notes-content">
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more-or-less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more-or-less normal.
+                                                                                            </p>
                                                                                             <span>Yesterday 2:45
                                                                                                 pm</span>
                                                                                         </div>
@@ -582,9 +462,12 @@
                                                                                                 alt="" />
                                                                                         </div>
                                                                                         <div class="notes-content">
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more-or-less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more-or-less normal.
+                                                                                            </p>
                                                                                             <span>Yesterday 2:45
                                                                                                 pm</span>
                                                                                         </div>
@@ -599,9 +482,12 @@
                                                                                                 alt="" />
                                                                                         </div>
                                                                                         <div class="notes-content">
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more-or-less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more-or-less normal.
+                                                                                            </p>
                                                                                             <span>Yesterday 2:45
                                                                                                 pm</span>
                                                                                         </div>
@@ -616,9 +502,12 @@
                                                                                                 alt="" />
                                                                                         </div>
                                                                                         <div class="notes-content">
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more-or-less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more-or-less normal.
+                                                                                            </p>
                                                                                             <span>Yesterday 2:45
                                                                                                 pm</span>
                                                                                         </div>
@@ -633,9 +522,12 @@
                                                                                                 alt="" />
                                                                                         </div>
                                                                                         <div class="notes-content">
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more-or-less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more-or-less normal.
+                                                                                            </p>
                                                                                             <span>Yesterday 2:45
                                                                                                 pm</span>
                                                                                         </div>
@@ -650,9 +542,12 @@
                                                                                                 alt="" />
                                                                                         </div>
                                                                                         <div class="notes-content">
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more-or-less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more-or-less normal.
+                                                                                            </p>
                                                                                             <span>Yesterday 2:45
                                                                                                 pm</span>
                                                                                         </div>
@@ -667,9 +562,12 @@
                                                                                                 alt="" />
                                                                                         </div>
                                                                                         <div class="notes-content">
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more-or-less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more-or-less normal.
+                                                                                            </p>
                                                                                             <span>Yesterday 2:45
                                                                                                 pm</span>
                                                                                         </div>
@@ -684,9 +582,12 @@
                                                                                                 alt="" />
                                                                                         </div>
                                                                                         <div class="notes-content">
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more-or-less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more-or-less normal.
+                                                                                            </p>
                                                                                             <span>Yesterday 2:45
                                                                                                 pm</span>
                                                                                         </div>
@@ -701,9 +602,12 @@
                                                                                                 alt="" />
                                                                                         </div>
                                                                                         <div class="notes-content">
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more-or-less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more-or-less normal.
+                                                                                            </p>
                                                                                             <span>Yesterday 2:45
                                                                                                 pm</span>
                                                                                         </div>
@@ -718,9 +622,12 @@
                                                                                                 alt="" />
                                                                                         </div>
                                                                                         <div class="notes-content">
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more-or-less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more-or-less normal.
+                                                                                            </p>
                                                                                             <span>Yesterday 2:45
                                                                                                 pm</span>
                                                                                         </div>
@@ -734,9 +641,11 @@
                                                             <div id="Projects" class="tab-pane fade">
                                                                 <div class="projects-settings-wrap">
                                                                     <div class="note-heading-indicate">
-                                                                        <h2><i class="fa fa-cube"></i> Latest projects
+                                                                        <h2><i class="fa fa-cube"></i> Latest
+                                                                            projects
                                                                         </h2>
-                                                                        <p> You have 20 projects. 5 not completed.</p>
+                                                                        <p> You have 20 projects. 5 not completed.
+                                                                        </p>
                                                                     </div>
                                                                     <div
                                                                         class="project-st-list-area project-st-menu-scrollbar">
@@ -747,23 +656,28 @@
                                                                                         <div
                                                                                             class="projects-st-heading">
                                                                                             <h2>Web Development</h2>
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more or less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more or less normal.
+                                                                                            </p>
                                                                                             <span
                                                                                                 class="project-st-time">1
                                                                                                 hours ago</span>
                                                                                         </div>
                                                                                         <div
                                                                                             class="projects-st-content">
-                                                                                            <p>Completion with: 28%</p>
+                                                                                            <p>Completion with: 28%
+                                                                                            </p>
                                                                                             <div
                                                                                                 class="progress progress-mini">
                                                                                                 <div style="width: 28%;"
                                                                                                     class="progress-bar progress-bar-danger hd-tp-1">
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <p>Project end: 4:00 pm -
+                                                                                            <p>Project end: 4:00 pm
+                                                                                                -
                                                                                                 12.06.2014</p>
                                                                                         </div>
                                                                                     </div>
@@ -776,23 +690,28 @@
                                                                                             class="projects-st-heading">
                                                                                             <h2>Software Development
                                                                                             </h2>
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more or less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more or less normal.
+                                                                                            </p>
                                                                                             <span
                                                                                                 class="project-st-time">2
                                                                                                 hours ago</span>
                                                                                         </div>
                                                                                         <div
                                                                                             class="projects-st-content project-rating-cl">
-                                                                                            <p>Completion with: 68%</p>
+                                                                                            <p>Completion with: 68%
+                                                                                            </p>
                                                                                             <div
                                                                                                 class="progress progress-mini">
                                                                                                 <div style="width: 68%;"
                                                                                                     class="progress-bar hd-tp-2">
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <p>Project end: 4:00 pm -
+                                                                                            <p>Project end: 4:00 pm
+                                                                                                -
                                                                                                 12.06.2014</p>
                                                                                         </div>
                                                                                     </div>
@@ -804,23 +723,28 @@
                                                                                         <div
                                                                                             class="projects-st-heading">
                                                                                             <h2>Graphic Design</h2>
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more or less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more or less normal.
+                                                                                            </p>
                                                                                             <span
                                                                                                 class="project-st-time">3
                                                                                                 hours ago</span>
                                                                                         </div>
                                                                                         <div
                                                                                             class="projects-st-content">
-                                                                                            <p>Completion with: 78%</p>
+                                                                                            <p>Completion with: 78%
+                                                                                            </p>
                                                                                             <div
                                                                                                 class="progress progress-mini">
                                                                                                 <div style="width: 78%;"
                                                                                                     class="progress-bar hd-tp-3">
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <p>Project end: 4:00 pm -
+                                                                                            <p>Project end: 4:00 pm
+                                                                                                -
                                                                                                 12.06.2014</p>
                                                                                         </div>
                                                                                     </div>
@@ -832,23 +756,28 @@
                                                                                         <div
                                                                                             class="projects-st-heading">
                                                                                             <h2>Web Design</h2>
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more or less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more or less normal.
+                                                                                            </p>
                                                                                             <span
                                                                                                 class="project-st-time">4
                                                                                                 hours ago</span>
                                                                                         </div>
                                                                                         <div
                                                                                             class="projects-st-content project-rating-cl2">
-                                                                                            <p>Completion with: 38%</p>
+                                                                                            <p>Completion with: 38%
+                                                                                            </p>
                                                                                             <div
                                                                                                 class="progress progress-mini">
                                                                                                 <div style="width: 38%;"
                                                                                                     class="progress-bar progress-bar-danger hd-tp-4">
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <p>Project end: 4:00 pm -
+                                                                                            <p>Project end: 4:00 pm
+                                                                                                -
                                                                                                 12.06.2014</p>
                                                                                         </div>
                                                                                     </div>
@@ -860,23 +789,28 @@
                                                                                         <div
                                                                                             class="projects-st-heading">
                                                                                             <h2>Business Card</h2>
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more or less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more or less normal.
+                                                                                            </p>
                                                                                             <span
                                                                                                 class="project-st-time">5
                                                                                                 hours ago</span>
                                                                                         </div>
                                                                                         <div
                                                                                             class="projects-st-content">
-                                                                                            <p>Completion with: 28%</p>
+                                                                                            <p>Completion with: 28%
+                                                                                            </p>
                                                                                             <div
                                                                                                 class="progress progress-mini">
                                                                                                 <div style="width: 28%;"
                                                                                                     class="progress-bar progress-bar-danger hd-tp-5">
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <p>Project end: 4:00 pm -
+                                                                                            <p>Project end: 4:00 pm
+                                                                                                -
                                                                                                 12.06.2014</p>
                                                                                         </div>
                                                                                     </div>
@@ -887,24 +821,30 @@
                                                                                     <div class="project-list-flow">
                                                                                         <div
                                                                                             class="projects-st-heading">
-                                                                                            <h2>Ecommerce Business</h2>
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more or less normal.</p>
+                                                                                            <h2>Ecommerce Business
+                                                                                            </h2>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more or less normal.
+                                                                                            </p>
                                                                                             <span
                                                                                                 class="project-st-time">6
                                                                                                 hours ago</span>
                                                                                         </div>
                                                                                         <div
                                                                                             class="projects-st-content project-rating-cl">
-                                                                                            <p>Completion with: 68%</p>
+                                                                                            <p>Completion with: 68%
+                                                                                            </p>
                                                                                             <div
                                                                                                 class="progress progress-mini">
                                                                                                 <div style="width: 68%;"
                                                                                                     class="progress-bar hd-tp-6">
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <p>Project end: 4:00 pm -
+                                                                                            <p>Project end: 4:00 pm
+                                                                                                -
                                                                                                 12.06.2014</p>
                                                                                         </div>
                                                                                     </div>
@@ -915,24 +855,30 @@
                                                                                     <div class="project-list-flow">
                                                                                         <div
                                                                                             class="projects-st-heading">
-                                                                                            <h2>Woocommerce Plugin</h2>
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more or less normal.</p>
+                                                                                            <h2>Woocommerce Plugin
+                                                                                            </h2>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more or less normal.
+                                                                                            </p>
                                                                                             <span
                                                                                                 class="project-st-time">7
                                                                                                 hours ago</span>
                                                                                         </div>
                                                                                         <div
                                                                                             class="projects-st-content">
-                                                                                            <p>Completion with: 78%</p>
+                                                                                            <p>Completion with: 78%
+                                                                                            </p>
                                                                                             <div
                                                                                                 class="progress progress-mini">
                                                                                                 <div style="width: 78%;"
                                                                                                     class="progress-bar">
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <p>Project end: 4:00 pm -
+                                                                                            <p>Project end: 4:00 pm
+                                                                                                -
                                                                                                 12.06.2014</p>
                                                                                         </div>
                                                                                     </div>
@@ -944,23 +890,28 @@
                                                                                         <div
                                                                                             class="projects-st-heading">
                                                                                             <h2>Wordpress Theme</h2>
-                                                                                            <p> The point of using Lorem
-                                                                                                Ipsum is that it has a
-                                                                                                more or less normal.</p>
+                                                                                            <p> The point of using
+                                                                                                Lorem
+                                                                                                Ipsum is that it has
+                                                                                                a
+                                                                                                more or less normal.
+                                                                                            </p>
                                                                                             <span
                                                                                                 class="project-st-time">9
                                                                                                 hours ago</span>
                                                                                         </div>
                                                                                         <div
                                                                                             class="projects-st-content project-rating-cl2">
-                                                                                            <p>Completion with: 38%</p>
+                                                                                            <p>Completion with: 38%
+                                                                                            </p>
                                                                                             <div
                                                                                                 class="progress progress-mini">
                                                                                                 <div style="width: 38%;"
                                                                                                     class="progress-bar progress-bar-danger">
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <p>Project end: 4:00 pm -
+                                                                                            <p>Project end: 4:00 pm
+                                                                                                -
                                                                                                 12.06.2014</p>
                                                                                         </div>
                                                                                     </div>
@@ -973,9 +924,11 @@
                                                             <div id="Settings" class="tab-pane fade">
                                                                 <div class="setting-panel-area">
                                                                     <div class="note-heading-indicate">
-                                                                        <h2><i class="fa fa-gears"></i> Settings Panel
+                                                                        <h2><i class="fa fa-gears"></i> Settings
+                                                                            Panel
                                                                         </h2>
-                                                                        <p> You have 20 Settings. 5 not completed.</p>
+                                                                        <p> You have 20 Settings. 5 not completed.
+                                                                        </p>
                                                                     </div>
                                                                     <ul class="setting-panel-list">
                                                                         <li>
@@ -1177,8 +1130,8 @@
                                             </ul>
                                         </li>
                                         <li><a href="events.html">Event</a></li>
-                                        <li><a data-toggle="collapse" data-target="#demoevent" href="#">Professors <span
-                                                    class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <li><a data-toggle="collapse" data-target="#demoevent" href="#">Professors
+                                                <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demoevent" class="collapse dropdown-header-top">
                                                 <li><a href="all-professors.html">All Professors</a>
                                                 </li>
@@ -1218,8 +1171,8 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><a data-toggle="collapse" data-target="#demolibra" href="#">Library <span
-                                                    class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <li><a data-toggle="collapse" data-target="#demolibra" href="#">Library
+                                                <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demolibra" class="collapse dropdown-header-top">
                                                 <li><a href="library-assets.html">Library Assets</a>
                                                 </li>
@@ -1356,408 +1309,349 @@
                     </div>
                 </div>
             </div>
-            <!-- Mobile Menu end -->
-            <div class="breadcome-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="breadcome-list single-page-breadcome">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="breadcome-heading">
-                                            <form role="search" class="sr-input-func">
-                                                <input type="text" placeholder="Search..."
-                                                    class="search-int form-control">
-                                                <a href="#"><i class="fa fa-search"></i></a>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <ul class="breadcome-menu">
-                                            <li><a href="#">Home</a> <span class="bread-slash">/</span>
-                                            </li>
-                                            <li><span class="bread-blod">Product Payment</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="payment-cart-pro mg-b-30">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="card payment-card responsive-mg-b-30">
-                            <div class="payment-inner-pro">
-                                <i class="fa fa-cc-paypal" aria-hidden="true"></i>
-                                <h5>**** **** **** 1234</h5>
-                                <div class="row m-t-10">
-                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-6">
-                                        <strong class="m-r-5">Expiry Date :</strong><br />20/09/17
-                                    </div>
-                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                                        <strong class="m-r-5">Name :</strong>Selim sha<br />
-                                        <strong class="m-r-5">CSV :</strong>2345
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="card payment-card responsive-mg-b-30">
-                            <div class="payment-inner-pro">
-                                <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-                                <h5>**** **** **** 2133</h5>
-                                <div class="row m-t-10">
-                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-6">
-                                        <strong class="m-r-5">Expiry Date :</strong><br />21/09/2020
-                                    </div>
-                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                                        <strong class="m-r-5">Name :</strong>John Plam<br />
-                                        <strong class="m-r-5">CSV :</strong>3243
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="card payment-card tb-sm-res-d-n dk-res-t-d-n">
-                            <div class="payment-inner-pro">
-                                <i class="fa fa-credit-card" aria-hidden="true"></i>
-                                <h5>**** **** **** 3454</h5>
-                                <div class="row m-t-10">
-                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-6">
-                                        <strong class="m-r-5">Expiry Date :</strong><br />23/09/2020
-                                    </div>
-                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                                        <strong class="m-r-5">Name :</strong>Kabir Khan<br />
-                                        <strong class="m-r-5">CSV :</strong>4565
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Single pro tab review Start-->
-        <div class="single-pro-review-area mt-t-30 mg-b-15">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="product-payment-inner-st">
-                            <ul id="myTab4" class="tab-review-design">
-                                <li class="active"><a href="#description">Credit Card</a></li>
-                                <li><a href="#reviews"> Debit Card</a></li>
-                                <li><a href="#INFORMATION">EMI</a></li>
-                                <li><a href="#netbanking">Banking</a></li>
-                                <li><a href="#cod">Address</a></li>
-                            </ul>
-                            <div id="myTabContent" class="tab-content custom-product-edit">
-                                <div class="product-tab-list tab-pane fade active in" id="description">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="review-content-section">
-                                                <div class="demo-container">
-                                                    <div class="card-wrapper"></div>
-                                                    <form class="payment-form mg-t-30">
-                                                        <div class="form-group">
-                                                            <input name="number" type="tel" class="form-control"
-                                                                placeholder="Card Number">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input name="name" type="text" class="form-control"
-                                                                placeholder="Full Name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input name="expiry" type="tel" class="form-control"
-                                                                placeholder="MM/YY">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input name="cvc" type="number" class="form-control"
-                                                                placeholder="CVC">
-                                                        </div>
-                                                        <div class="text-center credit-card-custom">
-                                                            <a href="#!"
-                                                                class="btn btn-primary waves-effect waves-light">Submit</a>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-tab-list tab-pane fade" id="reviews">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="review-content-section">
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <div class="devit-card-custom">
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="Type your Full Name">
-                                                            </div>
-                                                            <div class="form-group CVV">
-                                                                <input type="text" class="form-control" id="cvv"
-                                                                    placeholder="CVV">
-                                                            </div>
-                                                            <div class="form-group" id="card-number-field">
-                                                                <input type="text" name="name" class="form-control"
-                                                                    id="cardNumber" placeholder="Card Number">
-                                                            </div>
-                                                            <select class="form-control mg-b-15">
-                                                                <option>Select Month</option>
-                                                                <option value="01">January</option>
-                                                                <option value="02">February </option>
-                                                                <option value="03">March</option>
-                                                                <option value="04">April</option>
-                                                                <option value="05">May</option>
-                                                                <option value="06">June</option>
-                                                                <option value="07">July</option>
-                                                                <option value="08">August</option>
-                                                                <option value="09">September</option>
-                                                                <option value="10">October</option>
-                                                                <option value="11">November</option>
-                                                                <option value="12">December</option>
-                                                            </select>
-                                                            <select class="form-control">
-                                                                <option>Select Year</option>
-                                                                <option value="16"> 2016</option>
-                                                                <option value="17"> 2017</option>
-                                                                <option value="18"> 2018</option>
-                                                                <option value="19"> 2019</option>
-                                                                <option value="20"> 2020</option>
-                                                                <option value="21"> 2021</option>
-                                                            </select>
-                                                            <div class="payment-method-ht">
-                                                                <span><i class="fa fa-cc-paypal"
-                                                                        aria-hidden="true"></i></span>
-                                                                <span><i class="fa fa-cc-visa"
-                                                                        aria-hidden="true"></i></span>
-                                                                <span><i class="fa fa-credit-card"
-                                                                        aria-hidden="true"></i></span>
-                                                                <span><i class="fa fa-cc-mastercard"
-                                                                        aria-hidden="true"></i></span>
-                                                            </div>
-                                                            <a href="#!"
-                                                                class="btn btn-primary waves-effect waves-light">Submit</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-tab-list tab-pane fade" id="INFORMATION">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="review-content-section">
-                                                <select class="form-control mg-b-15">
-                                                    <option>Select Card</option>
-                                                    <option>ICICI Credit Card</option>
-                                                    <option>AXIS Credit Card</option>
-                                                    <option>HSBC Credit Card</option>
-                                                    <option>KOTAK Credit Card</option>
-                                                    <option>INDUSIND Credit Card</option>
-                                                    <option>HDFC Credit Card</option>
-                                                    <option>ICICI Debit Card</option>
-                                                    <option>SBI Credit Card</option>
-                                                    <option>CITIBANK Credit Card</option>
-                                                    <option>AXIS Credit Card</option>
-                                                </select>
-                                                <select class="form-control mg-b-15">
-                                                    <option>Select Duration</option>
-                                                    <option>1 month</option>
-                                                    <option>2 year</option>
-                                                    <option>5 month</option>
-                                                    <option>3 week</option>
-                                                    <option>5 year</option>
-                                                    <option>7 month</option>
-                                                </select>
-                                                <button type="submit"
-                                                    class="btn btn-primary waves-effect waves-light">Submit</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-tab-list tab-pane fade" id="netbanking">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="review-content-section">
-                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                    <div class="review-content-section">
-                                                        <select class="form-control mg-b-15">
-                                                            <option>Select Bank</option>
-                                                            <option>State bank of india</option>
-                                                            <option>Bank of baroda</option>
-                                                            <option>Central bank of india</option>
-                                                            <option>Punjab national bank</option>
-                                                            <option>Yes bank</option>
-                                                            <option>Kotak mahindra bank</option>
-                                                        </select>
-                                                        <button type="submit"
-                                                            class="btn btn-primary waves-effect waves-light">Submit</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-tab-list tab-pane fade" id="cod">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="review-content-section">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="form-group">
-                                                            <input name="number" type="text" class="form-control"
-                                                                placeholder="First Name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Last Name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Address">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="Pincode">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="form-group">
-                                                            <select class="form-control">
-                                                                <option>Select country</option>
-                                                                <option>India</option>
-                                                                <option>Pakistan</option>
-                                                                <option>Amerika</option>
-                                                                <option>China</option>
-                                                                <option>Dubai</option>
-                                                                <option>Nepal</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <select class="form-control">
-                                                                <option>Select state</option>
-                                                                <option>Gujarat</option>
-                                                                <option>Maharastra</option>
-                                                                <option>Rajastan</option>
-                                                                <option>Maharastra</option>
-                                                                <option>Rajastan</option>
-                                                                <option>Gujarat</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <select class="form-control">
-                                                                <option>Select city</option>
-                                                                <option>Surat</option>
-                                                                <option>Baroda</option>
-                                                                <option>Navsari</option>
-                                                                <option>Baroda</option>
-                                                                <option>Surat</option>
-                                                            </select>
-                                                        </div>
-                                                        <input type="number" class="form-control"
-                                                            placeholder="Mobile no.">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="payment-adress">
-                                                            <button type="submit"
-                                                                class="btn btn-primary waves-effect waves-light">Submit</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="footer-copy-right">
-                            <p>Copyright © 2018. All rights reserved. Template by <a
-                                    href="https://colorlib.com/wp/templates/">Colorlib</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- jquery
+
+        </div>
+
+        <div class="header header-nav">
+            <!-- <button class="add-task-btn-nav" id="openModalBtn" style="color: #000000;">+ Add new User</button> -->
+
+            <input type="text" placeholder="Search">
+
+            <div class="sort-filter w-50">
+                <select>
+                    <option>Sort / Filter</option>
+                    <option>Name</option>
+                    <option>LastName</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 btns-reposts">
+
+                <a href="project_report.html" class="btn project-report" style="background-color: #95a4fc;">Project
+                    Report</a>
+                <a href="employee_report.html" class="btn project-report bg-white" style=" border-color: #000;">
+                    Employee
+                    Project</a>
+
+            </div>
+        </div>
+        <div class="row user-card">
+            <div class="col-md-9">
+                <div class=" col-md-3 ">
+                    <div class="analytics-sparkle-line reso-mg-b-30"
+                        style="background-color:#BAEDBD !important;    border-radius: 23px;">
+                        <div class="analytics-content">
+
+                            <h2 style="display: flex;justify-content: space-between;">
+                                <span>27</span>
+                                <img src="img/noun-in-process-3674578 (1) 1.png" alt="">
+                            </h2>
+                            <br>
+
+
+                            <h5 style="font-size: 14px;">Ongoing project</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 ">
+                    <div class="analytics-sparkle-line reso-mg-b-30"
+                        style="background-color:#1C1C1C !important;     border-radius: 23px;">
+                        <div class="analytics-content" style="color: white;">
+
+                            <h2 style="display: flex;justify-content: space-between;">
+                                <span style="color: white;">14</span>
+                                <img src="img/noun-pending-5525176 1.png" alt="" style="margin-top: -7px;">
+                            </h2>
+                            <br>
+
+
+                            <h6 style="font-size: 14px;">Pending project</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 ">
+                    <div class="analytics-sparkle-line reso-mg-b-30"
+                        style="background-color:#F04034 !important;     border-radius: 23px;">
+                        <div class="analytics-content" style="color: white;">
+
+                            <h2 style="display: flex;justify-content: space-between;">
+                                <span style="color: white;">03</span>
+                                <img src="img/noun-flags-7266046 1.png" alt="" style="margin-top: -7px;">
+                            </h2>
+                            <br>
+
+
+                            <h6 style="font-size: 14px;">Red Flagged Project</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 ">
+                    <div class="analytics-sparkle-line reso-mg-b-30"
+                        style="background-color:#F3F6FF !important;     border-radius: 23px;">
+                        <div class="analytics-content">
+
+                            <h2 style="display: flex;justify-content: space-between;">
+                                <span>36</span>
+                                <img src="img/Group.png" alt="">
+                            </h2>
+                            <br>
+
+
+                            <h5 style="font-size: 14px;">Completed projects</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class=" col-lg-3 my-3">
+                <div class="analytics-sparkle-line reso-mg-b-30"
+                    style="background-color:#95a4fc !important;    border-radius: 23px;">
+                    <div class="analytics-content">
+
+                        <h2 style="display: flex;justify-content: space-between;">
+                            <span>27</span>
+                            <img src="img/logo/noun-in-process.svg" width="30" alt="">
+                        </h2>
+                        <br>
+                        <h5 style="font-size: 14px;"> Ongoing project</h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class=" col-lg-3  my-3">
+                <div class="analytics-sparkle-line reso-mg-b-30"
+                    style="background-color: #95a4fc !important;    border-radius: 23px;">
+                    <div class="analytics-content">
+
+                        <h2 style="display: flex;justify-content: space-between;">
+                            <span class="text-white">27</span>
+                            <img src="img/logo/noun-pending.svg" width="30" alt="">
+                        </h2>
+                        <br>
+
+
+                        <h5 style="font-size: 14px;"> Pending Project</h2>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-3 my-3">
+                <div class="analytics-sparkle-line reso-mg-b-30"
+                    style="background-color:#95a4fc !important;    border-radius: 23px;">
+                    <div class="analytics-content">
+
+                        <h2 style="display: flex;justify-content: space-between; color: rgb(7, 7, 7);">
+                            <span>27</span>
+                            <img src="img/logo/noun-flags.svg" width="30 " alt="">
+                        </h2>
+                        <br>
+
+
+                        <h5 style="font-size: 14px;">Red Flagged Project </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="  col-lg-3 my-3 ">
+                <div class="analytics-sparkle-line reso-mg-b-30"
+                    style="background-color:#95a4fc !important;    border-radius: 23px;">
+                    <div class="analytics-content">
+
+                        <h2 style="display: flex;justify-content: space-between; color: rgb(7, 7, 7);">
+                            <span>27</span>
+                            <img src="img/logo/non-completed.svg" width="30 " alt="">
+                        </h2>
+                        <br>
+
+
+                        <h5 style="font-size: 14px;">Completed Project </h2>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="user-table">
+            <h3 class="my-4"> Ongoing Projects (40) </h3>
+
+            <table class="table text-center table table-striped table-bordered my-4" id="">
+                <thead class="table-dark text-center " style="background-color: #95a4fc;">
+                    <tr>
+                        <th class="text-center">Project Name</th>
+                        <th class="text-center">Project Manager</th>
+                        <th class="text-center">Start Date</th>
+                        <th class="text-center">End Date</th>
+                        <th class="text-center">Progress</th>
+                        <th class="text-center">Budget Utilization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- <td class="userId text-secondry" id="openModalBtnDeatil">BVG</td> -->
+                        <td class="userId text-secondry">BVG</td>
+                        <td>pratik Patil</td>
+                        <td>25/02/24</td>
+                        <td>25/march/2025</td>
+                        <td> 80%</td>
+                        <td> 40 Lack / 80 Lack</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="userId text-secondry">sahu</td>
+                        <td>pratik Patil</td>
+                        <td>25/02/24</td>
+                        <td>25/march/2025</td>
+                        <td> 80%</td>
+                        <td> 40 Lack / 80 Lack</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="userId text-secondry">IndiaQofoods</td>
+                        <td>pratik Patil</td>
+                        <td>25/02/24</td>
+                        <td>25/march/2025</td>
+                        <td> 80%</td>
+                        <td> 40 Lack / 80 Lack</td>
+                        </td>
+                    </tr>
+                    <!-- More rows -->
+                </tbody>
+            </table>
+
+            <div id="userModalDeatil" class="modal">
+                <div class="modal-content">
+                    <h2>Project Details</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="">
+                        <p style="text-align: left;"><strong>Project Name:</strong> <span id="modalUserId">
+                                BVG</span></p>
+                        <p style="text-align: left;"> <strong>Project Manager:</strong> <span id="modalUserName"> sham
+                                sundar</span></p>
+                        <p style="text-align: left;"><strong>Start Date:</strong> <span
+                                id="modalUserEmail">23/23/23</span></p>
+                        <p style="text-align: left;"><strong>End Date:</strong> <span id="modalUserRole">
+                                15/15/24</span>
+                        </p>
+                        <p style="text-align: left;"><strong>Budget Utilization:</strong> <span id="modalUserStatus">
+                                20Lack /40Lack
+                            </span>
+                        </p>
+                    </div>
+                    <table class="table text-center table table-striped table-bordered">
+                        <thead class="table-dark text-center">
+                            <tr>
+                                <th class="text-center">Project Manager</th>
+                                <th class="text-center">Project Name</th>
+                                <th class="text-center"> Team Lead</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>Ratn Lala</td>
+                                <td>Abhijeet saulu</td>
+                            </tr>
+                            <!-- More rows -->
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-secondary text-white btn-danger" id="closeModalBtnDeatil"
+                        data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+</body>
+<script>
+
+
+    const openModalBtnDetail = document.getElementById('openModalBtnDeatil');
+    const closeModalBtnDetail = document.getElementById('closeModalBtnDeatil');
+    const userModalDetail = document.getElementById('userModalDeatil');
+
+    // Open Modal Detail
+    openModalBtnDetail.addEventListener('click', () => {
+        userModalDetail.style.display = 'block';
+    });
+
+    // Close Modal Detail
+    closeModalBtnDetail.addEventListener('click', () => {
+        userModalDetail.style.display = 'none';
+    });
+
+    // Close modal when clicking outside the content
+    window.addEventListener('click', (event) => {
+        if (event.target === userModalDetail) {
+            userModalDetail.style.display = 'none';
+        }
+    });
+
+
+
+</script>
+<!-- jquery
 		============================================ -->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- bootstrap JS
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<!-- bootstrap JS
 		============================================ -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- wow JS
+<script src="js/bootstrap.min.js"></script>
+<!-- wow JS
 		============================================ -->
-    <script src="js/wow.min.js"></script>
-    <!-- price-slider JS
+<script src="js/wow.min.js"></script>
+<!-- price-slider JS
 		============================================ -->
-    <script src="js/jquery-price-slider.js"></script>
-    <!-- meanmenu JS
+<script src="js/jquery-price-slider.js"></script>
+<!-- meanmenu JS
 		============================================ -->
-    <script src="js/jquery.meanmenu.js"></script>
-    <!-- owl.carousel JS
+<script src="js/jquery.meanmenu.js"></script>
+<!-- owl.carousel JS
 		============================================ -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- sticky JS
+<script src="js/owl.carousel.min.js"></script>
+<!-- sticky JS
 		============================================ -->
-    <script src="js/jquery.sticky.js"></script>
-    <!-- scrollUp JS
+<script src="js/jquery.sticky.js"></script>
+<!-- scrollUp JS
 		============================================ -->
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <!-- mCustomScrollbar JS
+<script src="js/jquery.scrollUp.min.js"></script>
+<!-- counterup JS
 		============================================ -->
-    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
-    <!-- metisMenu JS
+<script src="js/counterup/jquery.counterup.min.js"></script>
+<script src="js/counterup/waypoints.min.js"></script>
+<script src="js/counterup/counterup-active.js"></script>
+<!-- mCustomScrollbar JS
 		============================================ -->
-    <script src="js/metisMenu/metisMenu.min.js"></script>
-    <script src="js/metisMenu/metisMenu-active.js"></script>
-    <!-- morrisjs JS
+<script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/scrollbar/mCustomScrollbar-active.js"></script>
+<!-- metisMenu JS
 		============================================ -->
-    <script src="js/sparkline/jquery.sparkline.min.js"></script>
-    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
-    <!-- calendar JS
+<script src="js/metisMenu/metisMenu.min.js"></script>
+<script src="js/metisMenu/metisMenu-active.js"></script>
+<!-- morrisjs JS
 		============================================ -->
-    <script src="js/calendar/moment.min.js"></script>
-    <script src="js/calendar/fullcalendar.min.js"></script>
-    <script src="js/calendar/fullcalendar-active.js"></script>
-    <!-- tab JS
+<script src="js/morrisjs/raphael-min.js"></script>
+<script src="js/morrisjs/morris.js"></script>
+<script src="js/morrisjs/morris-active.js"></script>
+<!-- morrisjs JS
 		============================================ -->
-    <script src="js/tab.js"></script>
-    <!-- payment away JS
+<script src="js/sparkline/jquery.sparkline.min.js"></script>
+<script src="js/sparkline/jquery.charts-sparkline.js"></script>
+<script src="js/sparkline/sparkline-active.js"></script>
+<!-- calendar JS
 		============================================ -->
-    <script src="js/card.js"></script>
-    <script src="js/jquery.payform.min.js"></script>
-    <script src="js/e-payment.js"></script>
-    <!-- plugins JS
+<script src="js/calendar/moment.min.js"></script>
+<script src="js/calendar/fullcalendar.min.js"></script>
+<script src="js/calendar/fullcalendar-active.js"></script>
+<!-- plugins JS
 		============================================ -->
-    <script src="js/plugins.js"></script>
-    <!-- main JS
+<script src="js/plugins.js"></script>
+<!-- main JS
 		============================================ -->
-    <script src="js/main.js"></script>
-    <!-- tawk chat JS
+<script src="js/main.js"></script>
+<!-- tawk chat JS
 		============================================ -->
-    <script src="js/tawk-chat.js"></script>
 </body>
 
 </html>
