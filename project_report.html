@@ -89,6 +89,30 @@
             width: 50%;
             text-align: center;
         }
+
+        .sort-filter select {
+            width: 100%;
+            height: fit-content;
+        }
+
+        .header-nav input {
+
+            margin-left: 30px;
+
+        }
+
+        .btns-reposts {
+            margin-left: 60px;
+            display: inline-block;
+        }
+
+        .project-report {
+            margin: 10px 10px 10px;
+            border-radius: 15px;
+            padding: 10px;
+            width: 200px;
+            color: #202023;
+        }
     </style>
 
 </head>
@@ -128,7 +152,7 @@
                         </li>
 
                         <li>
-                            <a title="Landing Page" href="project_report.html" aria-expanded="false"><span
+                            <a title="Landing Page" href="index.html" aria-expanded="false"><span
                                     class="educate-icon educate-charts icon-wrap" aria-hidden="true"></span> <span
                                     class="mini-click-non">Report & Analysis</span></a>
                         </li>
@@ -1290,171 +1314,226 @@
         </div>
 
         <div class="header header-nav">
-            <button class="add-task-btn-nav" id="openModalBtn" style="color: #000000;">+ Add new User</button>
+            <!-- <button class="add-task-btn-nav" id="openModalBtn" style="color: #000000;">+ Add new User</button> -->
 
             <input type="text" placeholder="Search">
-            <select type="text" placeholder="Search">
-                <option value="0"> Select project </option>
-                <option value="1"> project1 </option>
-                <option value="2"> project2 </option>
 
-            </select>
+            <div class="sort-filter w-50">
+                <select>
+                    <option>Sort / Filter</option>
+                    <option>Name</option>
+                    <option>LastName</option>
 
+                </select>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-6 btns-reposts">
 
+                <a href="project_report.html" class="btn project-report" style="background-color: #95a4fc;">Project
+                    Report</a>
+                <a href="employee_report.html" class="btn project-report bg-white" style=" border-color: #000;">
+                    Employee
+                    Project</a>
+
+            </div>
+        </div>
         <div class="row user-card">
-            <div class=" col-md-3 ">
-                <div class="analytics-sparkle-line reso-mg-b-30"
-                    style="background-color:red !important;    border-radius: 23px;">
-                    <div class="analytics-content">
+            <div class="col-md-9">
+                <div class=" col-md-3 ">
+                    <div class="analytics-sparkle-line reso-mg-b-30"
+                        style="background-color:#BAEDBD !important;    border-radius: 23px;">
+                        <div class="analytics-content">
 
-                        <h2 style="display: flex;justify-content: space-between;">
-                            <span>27</span>
-                            <img src="img/logo/person.svg" width="30" alt="">
-                        </h2>
-                        <br>
-                        <h5 style="font-size: 14px;"> Team Leaders</h2>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <div class=" col-md-3 ">
-                <div class="analytics-sparkle-line reso-mg-b-30"
-                    style="background-color: forestgreen !important;    border-radius: 23px;">
-                    <div class="analytics-content">
-
-                        <h2 style="display: flex;justify-content: space-between;">
-                            <span class="text-white">27</span>
-                            <img src="img/logo/person.svg" width="30" alt="">
-                        </h2>
-                        <br>
+                            <h2 style="display: flex;justify-content: space-between;">
+                                <span>27</span>
+                                <img src="img/noun-in-process-3674578 (1) 1.png" alt="">
+                            </h2>
+                            <br>
 
 
-                        <h5 style="font-size: 14px;"> Team Leaders</h2>
+                            <h5 style="font-size: 14px;">Ongoing project</h2>
+                        </div>
                     </div>
                 </div>
+                <div class=" col-md-3 ">
+                    <div class="analytics-sparkle-line reso-mg-b-30"
+                        style="background-color:#1C1C1C !important;     border-radius: 23px;">
+                        <div class="analytics-content" style="color: white;">
+
+                            <h2 style="display: flex;justify-content: space-between;">
+                                <span style="color: white;">14</span>
+                                <img src="img/noun-pending-5525176 1.png" alt="" style="margin-top: -7px;">
+                            </h2>
+                            <br>
+
+
+                            <h6 style="font-size: 14px;">Pending project</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 ">
+                    <div class="analytics-sparkle-line reso-mg-b-30"
+                        style="background-color:#F04034 !important;     border-radius: 23px;">
+                        <div class="analytics-content" style="color: white;">
+
+                            <h2 style="display: flex;justify-content: space-between;">
+                                <span style="color: white;">03</span>
+                                <img src="img/noun-flags-7266046 1.png" alt="" style="margin-top: -7px;">
+                            </h2>
+                            <br>
+
+
+                            <h6 style="font-size: 14px;">Red Flagged Project</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 ">
+                    <div class="analytics-sparkle-line reso-mg-b-30"
+                        style="background-color:#F3F6FF !important;     border-radius: 23px;">
+                        <div class="analytics-content">
+
+                            <h2 style="display: flex;justify-content: space-between;">
+                                <span>36</span>
+                                <img src="img/Group.png" alt="">
+                            </h2>
+                            <br>
+
+
+                            <h5 style="font-size: 14px;">Completed projects</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class=" col-md-3 ">
+            <!-- <div class=" col-lg-3 my-3">
                 <div class="analytics-sparkle-line reso-mg-b-30"
                     style="background-color:#95a4fc !important;    border-radius: 23px;">
                     <div class="analytics-content">
 
                         <h2 style="display: flex;justify-content: space-between;">
                             <span>27</span>
-                            <img src="img/logo/person.svg" width="30" alt="">
+                            <img src="img/logo/noun-in-process.svg" width="30" alt="">
+                        </h2>
+                        <br>
+                        <h5 style="font-size: 14px;"> Ongoing project</h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class=" col-lg-3  my-3">
+                <div class="analytics-sparkle-line reso-mg-b-30"
+                    style="background-color: #95a4fc !important;    border-radius: 23px;">
+                    <div class="analytics-content">
+
+                        <h2 style="display: flex;justify-content: space-between;">
+                            <span class="text-white">27</span>
+                            <img src="img/logo/noun-pending.svg" width="30" alt="">
                         </h2>
                         <br>
 
 
-                        <h5 style="font-size: 14px;"> Engineers</h2>
+                        <h5 style="font-size: 14px;"> Pending Project</h2>
                     </div>
                 </div>
             </div>
+            <div class=" col-lg-3 my-3">
+                <div class="analytics-sparkle-line reso-mg-b-30"
+                    style="background-color:#95a4fc !important;    border-radius: 23px;">
+                    <div class="analytics-content">
+
+                        <h2 style="display: flex;justify-content: space-between; color: rgb(7, 7, 7);">
+                            <span>27</span>
+                            <img src="img/logo/noun-flags.svg" width="30 " alt="">
+                        </h2>
+                        <br>
+
+
+                        <h5 style="font-size: 14px;">Red Flagged Project </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="  col-lg-3 my-3 ">
+                <div class="analytics-sparkle-line reso-mg-b-30"
+                    style="background-color:#95a4fc !important;    border-radius: 23px;">
+                    <div class="analytics-content">
+
+                        <h2 style="display: flex;justify-content: space-between; color: rgb(7, 7, 7);">
+                            <span>27</span>
+                            <img src="img/logo/non-completed.svg" width="30 " alt="">
+                        </h2>
+                        <br>
+
+
+                        <h5 style="font-size: 14px;">Completed Project </h2>
+                    </div>
+                </div>
+            </div> -->
         </div>
         <div class="user-table">
-            <h1> project Employee </h1>
+            <h3 class="my-4"> Ongoing Projects (40) </h3>
 
-            <table class="table text-center table table-striped table-bordered">
+            <table class="table text-center table table-striped table-bordered my-4" id="">
                 <thead class="table-dark text-center " style="background-color: #95a4fc;">
                     <tr>
-                        <th class="text-center">User ID</th>
-                        <th class="text-center">Name</th>
-                        <th class="text-center">Email</th>
-                        <th class="text-center">Role</th>
-                        <th class="text-center">Status</th>
-                        <th class="text-center">Actions</th>
+                        <th class="text-center">Project Name</th>
+                        <th class="text-center">Project Manager</th>
+                        <th class="text-center">Start Date</th>
+                        <th class="text-center">End Date</th>
+                        <th class="text-center">Progress</th>
+                        <th class="text-center">Budget Utilization</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="userId text-secondry" id="openModalBtnDeatil">1</td>
-                        <td>John Doe</td>
-                        <td>johndoe@example.com</td>
-                        <td>Admin</td>
-                        <td>Active</td>
-                        <td>
-                            <button class="btn btn-sm btn-primary">
-                                <img src="img/logo/trash.svg" width="20" alt="">
-                                Edit</button>
-                            <button class="btn btn-sm btn-danger">
-                                <img src="img/logo/edit-pencil.svg" width="20" alt="">
-                                Delete</button>
+                        <!-- <td class="userId text-secondry" id="openModalBtnDeatil">BVG</td> -->
+                        <td class="userId text-secondry">BVG</td>
+                        <td>pratik Patil</td>
+                        <td>25/02/24</td>
+                        <td>25/march/2025</td>
+                        <td> 80%</td>
+                        <td> 40 Lack / 80 Lack</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="userId text-secondry">sahu</td>
+                        <td>pratik Patil</td>
+                        <td>25/02/24</td>
+                        <td>25/march/2025</td>
+                        <td> 80%</td>
+                        <td> 40 Lack / 80 Lack</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="userId text-secondry">IndiaQofoods</td>
+                        <td>pratik Patil</td>
+                        <td>25/02/24</td>
+                        <td>25/march/2025</td>
+                        <td> 80%</td>
+                        <td> 40 Lack / 80 Lack</td>
                         </td>
                     </tr>
                     <!-- More rows -->
                 </tbody>
             </table>
 
-
-            <!-- Modal Structure -->
-            <div id="userModal" class="modal">
-                <div class="modal-content">
-                    <h2>User Details</h2>
-                    <form>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="form-group col-lg-6">
-                                    <label for="fullName" class="text-start">Full Name</label>
-                                    <input type="text" class="form-control table-bordered" id="fullName"
-                                        placeholder="Enter name" />
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email" />
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label for="role">Role</label>
-                                    <select class="form-control select-tag" id="role">
-                                        <option>Select Role</option>
-                                        <option>Admin</option>
-                                        <option>User</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label for="project">Assign Project</label>
-                                    <select class="form-control select-tag" id="project">
-                                        <option>Select Project</option>
-                                        <option>Project1</option>
-                                        <option>Project2</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password"
-                                        placeholder="Enter password" />
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label for="confirmPassword">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirmPassword"
-                                        placeholder="Confirm password" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary" id="addUserBtn">Add User</button>
-                            <button type="button" class="btn btn-danger" id="closeModalBtn"
-                                data-dismiss="modal">Cancel</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
             <div id="userModalDeatil" class="modal">
                 <div class="modal-content">
-                    <h2>User Details</h2>
+                    <h2>Project Details</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="">
-                        <p style="text-align: left;"><strong>User ID:</strong> <span id="modalUserId">
-                                123</span></p>
-                        <p style="text-align: left;"> <strong>Name:</strong> <span id="modalUserName"> sham
+                        <p style="text-align: left;"><strong>Project Name:</strong> <span id="modalUserId">
+                                BVG</span></p>
+                        <p style="text-align: left;"> <strong>Project Manager:</strong> <span id="modalUserName"> sham
                                 sundar</span></p>
-                        <p style="text-align: left;"><strong>Email:</strong> <span
-                                id="modalUserEmail">sham@gmail.com</span></p>
-                        <p style="text-align: left;"><strong>Role:</strong> <span id="modalUserRole"> Admin</span>
+                        <p style="text-align: left;"><strong>Start Date:</strong> <span
+                                id="modalUserEmail">23/23/23</span></p>
+                        <p style="text-align: left;"><strong>End Date:</strong> <span id="modalUserRole">
+                                15/15/24</span>
                         </p>
-                        <p style="text-align: left;"><strong>Status:</strong> <span id="modalUserStatus">Active
+                        <p style="text-align: left;"><strong>Budget Utilization:</strong> <span id="modalUserStatus">
+                                20Lack /40Lack
                             </span>
                         </p>
                     </div>
@@ -1488,28 +1567,6 @@
 </body>
 <script>
 
-
-    // Get Elements
-    const openModalBtn = document.getElementById('openModalBtn');
-    const closeModalBtn = document.getElementById('closeModalBtn');
-    const userModal = document.getElementById('userModal');
-
-    // Open Modal
-    openModalBtn.addEventListener('click', () => {
-        userModal.style.display = 'block';
-    });
-
-    // Close Modal
-    closeModalBtn.addEventListener('click', () => {
-        userModal.style.display = 'none';
-    });
-
-    // Close modal when clicking outside the content
-    window.addEventListener('click', (event) => {
-        if (event.target === userModal) {
-            userModal.style.display = 'none';
-        }
-    });
 
     const openModalBtnDetail = document.getElementById('openModalBtnDeatil');
     const closeModalBtnDetail = document.getElementById('closeModalBtnDeatil');

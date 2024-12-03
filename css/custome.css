@@ -5,8 +5,9 @@
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    width: 250px;
+    width: 175px;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .header-nav {
@@ -26,14 +27,16 @@
     border-radius: 25px;
 }
 .user-card {
-    margin: 15px 10px;
+    margin: 15px 20px;
 }
 .analytics-content h2>span {
     color: #f4f7fc;
 
 }
 .user-table {
-    margin: 0px 25px;
+    margin: 0px 20px;
+    margin-left: 28px;
+    overflow: overlay;
 }
 
 input[type=text] {
