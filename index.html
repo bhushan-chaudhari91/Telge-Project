@@ -1522,112 +1522,6 @@
                                         </div>
 
 
-
-                                        <script>
-                                            // Sample Project Data
-                                            const projects = [
-                                                { name: "Project 1", startDate: new Date(2024, 10, 27), endDate: new Date(2024, 11, 10) },
-                                                { name: "Project 2", startDate: new Date(2024, 10, 29), endDate: new Date(2024, 11, 15) },
-                                                { name: "Project 3", startDate: new Date(2024, 11, 1), endDate: new Date(2024, 11, 20) },
-                                                { name: "Project 4", startDate: new Date(2024, 11, 5), endDate: new Date(2025, 1, 12) },
-                                            ];
-
-                                            // Determine the ongoing start date (first project's start date)
-                                            const startDate = new Date(projects[0].startDate);
-
-                                            // Calculate the latest end date among all projects
-                                            const latestEndDate = projects.reduce((latest, project) => {
-                                                return project.endDate > latest ? project.endDate : latest;
-                                            }, projects[0].endDate);
-
-                                            // Function to calculate week date ranges
-                                            function getWeekDateRange(weekNumber) {
-                                                const weekStart = new Date(startDate);
-                                                weekStart.setDate(startDate.getDate() + (weekNumber - 1) * 7); // Start date of the week
-                                                const weekEnd = new Date(weekStart);
-                                                weekEnd.setDate(weekStart.getDate() + 6); // End date of the week
-
-                                                const formatDate = (date) => {
-                                                    const day = date.getDate();
-                                                    const month = date.toLocaleDateString('en-US', { month: 'short' }); // Get short month name
-                                                    return `${day}-${month}`;
-                                                };
-
-                                                return `${formatDate(weekStart)} to ${formatDate(weekEnd)}`;
-                                            }
-
-                                            // Function to calculate the total number of weeks based on the latest end date
-                                            function calculateTotalWeeks() {
-                                                return Math.ceil((latestEndDate - startDate) / (1000 * 60 * 60 * 24 * 7)); // Total weeks
-                                            }
-                                            let currentWeekIndex = 0; // To track the current set of weeks being displayed
-                                            const weeksPerPage = 4; // Number of weeks to show at a time
-
-                                            // Function to populate the week labels
-                                            function populateWeekLabels() {
-                                                const totalWeeks = calculateTotalWeeks();
-
-                                                const weekLabelsContainer = document.querySelector('.week-labels');
-                                                for (let i = 1; i <= totalWeeks; i++) {
-                                                    const span = document.createElement("span");
-                                                    span.textContent = `(${getWeekDateRange(i)})`;
-                                                    span.classList.add("week-label");
-                                                    weekLabelsContainer.appendChild(span);
-                                                }
-                                            }
-
-                                            // Function to calculate the position and width of the progress bar
-                                            function getProgressBarPosition(project) {
-                                                const projectStartWeek = Math.floor((project.startDate - startDate) / (1000 * 60 * 60 * 24 * 7)) + 1;
-                                                const projectEndWeek = Math.ceil((project.endDate - startDate) / (1000 * 60 * 60 * 24 * 7)) + 1;
-
-                                                const spanWeeks = projectEndWeek - projectStartWeek + 1;
-
-                                                return { start: projectStartWeek, spanWeeks };
-                                            }
-
-                                            // Function to generate the graphical timeline bar for each project
-                                            function generateProjectTimeline(project) {
-                                                const timelineContainer = document.getElementById("timelineContainer");
-
-                                                // Create a row for the project
-                                                const projectRow = document.createElement("div");
-                                                projectRow.classList.add("project-row");
-
-                                                // Project name label
-                                                const projectName = document.createElement("div");
-                                                projectName.classList.add("project-name");
-                                                projectName.textContent = project.name;
-                                                projectRow.appendChild(projectName);
-
-                                                // Timeline bar container
-                                                const timelineBarContainer = document.createElement("div");
-                                                timelineBarContainer.classList.add("timeline-bar-container");
-
-                                                // Get the start and end week for the project
-                                                const { start, spanWeeks } = getProgressBarPosition(project);
-
-                                                // Calculate the width of the progress bar
-                                                const progressWidth = (100 / calculateTotalWeeks()) * spanWeeks;
-
-                                                // Create the progress bar
-                                                const progressBar = document.createElement("div");
-                                                progressBar.classList.add("progress-bar");
-                                                progressBar.style.left = `${((start - 1) * 100) / calculateTotalWeeks()}%`; // Position the bar
-                                                progressBar.style.width = `${progressWidth}%`; // Set the width of the bar
-
-                                                // Append the progress bar to the timeline container
-                                                timelineBarContainer.appendChild(progressBar);
-                                                projectRow.appendChild(timelineBarContainer);
-
-                                                // Append the project row to the timeline container
-                                                timelineContainer.appendChild(projectRow);
-                                            }
-
-                                            // Populate the week labels and generate the timeline for each project
-                                            populateWeekLabels();
-                                            projects.forEach(generateProjectTimeline);
-                                        </script>
                                     </div>
 
                                 </div>
@@ -1656,8 +1550,8 @@
                                         <p>Customer Name</p>
                                     </div>
                                     <div class="task-summary">
-                                        <sapn>New Task</sapn>
-                                        <div class="task-badge text-center">11<br><span>Tasks</span></div>
+                                        <p>New Task</p>
+                                        <div class="task-badge text-center">11</div>
                                     </div>
                                 </div>
                                 <div class="project-card-body">
@@ -1685,7 +1579,7 @@
                                     </div>
                                     <div class="task-summary">
                                         <p>New Task</p>
-                                        <div class="task-badge text-center">11<br><span>Tasks</span></div>
+                                        <div class="task-badge text-center">11</div>
                                     </div>
                                 </div>
                                 <div class="project-card-body">
@@ -1873,23 +1767,116 @@
         </div>
     </div>
 
-    <div class="footer-copyright-area">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-copy-right">
-                        <p>Copyright © 2018. All rights reserved. Template by <a
-                                href="https://colorlib.com/wp/templates/">Colorlib</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+
 
     <!-- jquery
 		============================================ -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script>
+        // Sample Project Data
+        const projects = [
+            { name: "Project 1", startDate: new Date(2024, 10, 27), endDate: new Date(2024, 11, 10) },
+            { name: "Project 2", startDate: new Date(2024, 10, 29), endDate: new Date(2024, 11, 15) },
+            { name: "Project 3", startDate: new Date(2024, 11, 1), endDate: new Date(2024, 11, 20) },
+            { name: "Project 4", startDate: new Date(2024, 11, 5), endDate: new Date(2025, 1, 12) },
+        ];
+
+        // Determine the ongoing start date (first project's start date)
+        const startDate = new Date(projects[0].startDate);
+
+        // Calculate the latest end date among all projects
+        const latestEndDate = projects.reduce((latest, project) => {
+            return project.endDate > latest ? project.endDate : latest;
+        }, projects[0].endDate);
+
+        // Function to calculate week date ranges
+        function getWeekDateRange(weekNumber) {
+            const weekStart = new Date(startDate);
+            weekStart.setDate(startDate.getDate() + (weekNumber - 1) * 7); // Start date of the week
+            const weekEnd = new Date(weekStart);
+            weekEnd.setDate(weekStart.getDate() + 6); // End date of the week
+
+            const formatDate = (date) => {
+                const day = date.getDate();
+                const month = date.toLocaleDateString('en-US', { month: 'short' }); // Get short month name
+                return `${day}-${month}`;
+            };
+
+            return `${formatDate(weekStart)} to ${formatDate(weekEnd)}`;
+        }
+
+        // Function to calculate the total number of weeks based on the latest end date
+        function calculateTotalWeeks() {
+            return Math.ceil((latestEndDate - startDate) / (1000 * 60 * 60 * 24 * 7)); // Total weeks
+        }
+        let currentWeekIndex = 0; // To track the current set of weeks being displayed
+        const weeksPerPage = 4; // Number of weeks to show at a time
+
+        // Function to populate the week labels
+        function populateWeekLabels() {
+            const totalWeeks = calculateTotalWeeks();
+
+            const weekLabelsContainer = document.querySelector('.week-labels');
+            for (let i = 1; i <= totalWeeks; i++) {
+                const span = document.createElement("span");
+                span.textContent = `(${getWeekDateRange(i)})`;
+                span.classList.add("week-label");
+                weekLabelsContainer.appendChild(span);
+            }
+        }
+
+        // Function to calculate the position and width of the progress bar
+        function getProgressBarPosition(project) {
+            const projectStartWeek = Math.floor((project.startDate - startDate) / (1000 * 60 * 60 * 24 * 7)) + 1;
+            const projectEndWeek = Math.ceil((project.endDate - startDate) / (1000 * 60 * 60 * 24 * 7)) + 1;
+
+            const spanWeeks = projectEndWeek - projectStartWeek + 1;
+
+            return { start: projectStartWeek, spanWeeks };
+        }
+
+        // Function to generate the graphical timeline bar for each project
+        function generateProjectTimeline(project) {
+            const timelineContainer = document.getElementById("timelineContainer");
+
+            // Create a row for the project
+            const projectRow = document.createElement("div");
+            projectRow.classList.add("project-row");
+
+            // Project name label
+            const projectName = document.createElement("div");
+            projectName.classList.add("project-name");
+            projectName.textContent = project.name;
+            projectRow.appendChild(projectName);
+
+            // Timeline bar container
+            const timelineBarContainer = document.createElement("div");
+            timelineBarContainer.classList.add("timeline-bar-container");
+
+            // Get the start and end week for the project
+            const { start, spanWeeks } = getProgressBarPosition(project);
+
+            // Calculate the width of the progress bar
+            const progressWidth = (100 / calculateTotalWeeks()) * spanWeeks;
+
+            // Create the progress bar
+            const progressBar = document.createElement("div");
+            progressBar.classList.add("progress-bar");
+            progressBar.style.left = `${((start - 1) * 100) / calculateTotalWeeks()}%`; // Position the bar
+            progressBar.style.width = `${progressWidth}%`; // Set the width of the bar
+
+            // Append the progress bar to the timeline container
+            timelineBarContainer.appendChild(progressBar);
+            projectRow.appendChild(timelineBarContainer);
+
+            // Append the project row to the timeline container
+            timelineContainer.appendChild(projectRow);
+        }
+
+        // Populate the week labels and generate the timeline for each project
+        populateWeekLabels();
+        projects.forEach(generateProjectTimeline);
+    </script>
     <!-- bootstrap JS
 		============================================ -->
     <script src="js/bootstrap.min.js"></script>
