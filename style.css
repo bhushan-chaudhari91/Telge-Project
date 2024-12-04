@@ -4729,6 +4729,11 @@ div#sparklinehome canvas {
     box-sizing: border-box;
 }
 
+
+a {
+    color: #000000;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -4784,6 +4789,7 @@ body {
     border: 1px solid #ccc;
     width: 170px;
     text-align: center;
+    margin-right: 77px;
 }
 
 .task-container {
@@ -5456,7 +5462,7 @@ width: 100%;
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    background-color: #ffffff;
     margin: 0;
     padding: 20px;
 }

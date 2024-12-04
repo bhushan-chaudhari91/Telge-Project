@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Password Meter | Kiaalap - Kiaalap Admin Template</title>
+    <title>Dashboard | Mitroz Technologies</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -12,7 +12,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <!-- Google Fonts
 		============================================ -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <!-- Bootstrap CSS
 		============================================ -->
@@ -63,29 +62,13 @@
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <style>
-        .idiv {
-            height: 50px;
-            width: 50px;
-            background-color: #f3f6ff;
-            border-radius: 14px;
-            display: flex;
-            /* Enable flexbox */
-            justify-content: center;
-            /* Center horizontally */
-            align-items: center;
-            /* Center vertically */
-        }
-
-        .i1 {
-
-            font-size: 20px;
-
-        }
-    </style>
 </head>
 
 <body>
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+    <!-- Start Left menu area -->
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
@@ -116,19 +99,19 @@
                         </li>
 
                         <li>
-                            <a title="Landing Page" href="ProjectManagement.html" aria-expanded="false"><span
+                            <a title="Landing Page" href="Project-Management.html" aria-expanded="false"><span
                                     class="educate-icon educate-apps icon-wrap" aria-hidden="true"></span> <span
                                     class="mini-click-non">Project Management</span></a>
                         </li>
 
                         <li>
-                            <a title="Landing Page" href="user_management.html" aria-expanded="false"><span
+                            <a title="Landing Page" href="index.html" aria-expanded="false"><span
                                     class="educate-icon educate-professor icon-wrap" aria-hidden="true"></span> <span
                                     class="mini-click-non">User Management</span></a>
                         </li>
 
                         <li>
-                            <a title="Landing Page" href="project_report.html" aria-expanded="false"><span
+                            <a title="Landing Page" href="index.html" aria-expanded="false"><span
                                     class="educate-icon educate-charts icon-wrap" aria-hidden="true"></span> <span
                                     class="mini-click-non">Report & Analysis</span></a>
                         </li>
@@ -145,141 +128,6 @@
                                     aria-hidden="true"></span> <span class="mini-click-non">Settings</span></a>
                         </li>
 
-
-                        <!-- <li>
-                            <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Professors</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Professors" href="all-professors.html"><span class="mini-sub-pro">All Professors</span></a></li>
-                                <li><a title="Add Professor" href="add-professor.html"><span class="mini-sub-pro">Add Professor</span></a></li>
-                                <li><a title="Edit Professor" href="edit-professor.html"><span class="mini-sub-pro">Edit Professor</span></a></li>
-                                <li><a title="Professor Profile" href="professor-profile.html"><span class="mini-sub-pro">Professor Profile</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">User Management</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" href="all-students.html"><span class="mini-sub-pro">All Students</span></a></li>
-                                <li><a title="Add Students" href="add-student.html"><span class="mini-sub-pro">Add Student</span></a></li>
-                                <li><a title="Edit Students" href="edit-student.html"><span class="mini-sub-pro">Edit Student</span></a></li>
-                                <li><a title="Students Profile" href="student-profile.html"><span class="mini-sub-pro">Student Profile</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Report & Analysis</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Courses" href="all-courses.html"><span class="mini-sub-pro">All Courses</span></a></li>
-                                <li><a title="Add Courses" href="add-course.html"><span class="mini-sub-pro">Add Course</span></a></li>
-                                <li><a title="Edit Courses" href="edit-course.html"><span class="mini-sub-pro">Edit Course</span></a></li>
-                                <li><a title="Courses Profile" href="course-info.html"><span class="mini-sub-pro">Courses Info</span></a></li>
-                                <li><a title="Product Payment" href="course-payment.html"><span class="mini-sub-pro">Courses Payment</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Notification</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Library" href="library-assets.html"><span class="mini-sub-pro">Library Assets</span></a></li>
-                                <li><a title="Add Library" href="add-library-assets.html"><span class="mini-sub-pro">Add Library Asset</span></a></li>
-                                <li><a title="Edit Library" href="edit-library-assets.html"><span class="mini-sub-pro">Edit Library Asset</span></a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="library-assets.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Test Notification</span></a>
-                        </li>
-                        
-                        <li>
-                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-department icon-wrap"></span> <span class="mini-click-non">Settings</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Departments List" href="departments.html"><span class="mini-sub-pro">Departments List</span></a></li>
-                                <li><a title="Add Departments" href="add-department.html"><span class="mini-sub-pro">Add Departments</span></a></li>
-                                <li><a title="Edit Departments" href="edit-department.html"><span class="mini-sub-pro">Edit Departments</span></a></li>
-                            </ul>
-                        </li> -->
-
-
-
-
-
-
-
-
-
-
-
-
-                        <!-- <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-message icon-wrap"></span> <span class="mini-click-non">Mailbox</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Inbox" href="mailbox.html"><span class="mini-sub-pro">Inbox</span></a></li>
-                                <li><a title="View Mail" href="mailbox-view.html"><span class="mini-sub-pro">View Mail</span></a></li>
-                                <li><a title="Compose Mail" href="mailbox-compose.html"><span class="mini-sub-pro">Compose Mail</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-interface icon-wrap"></span> <span class="mini-click-non">Interface</span></a>
-                            <ul class="submenu-angle interface-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Google Map" href="google-map.html"><span class="mini-sub-pro">Google Map</span></a></li>
-                                <li><a title="Data Maps" href="data-maps.html"><span class="mini-sub-pro">Data Maps</span></a></li>
-                                <li><a title="Pdf Viewer" href="pdf-viewer.html"><span class="mini-sub-pro">Pdf Viewer</span></a></li>
-                                <li><a title="X-Editable" href="x-editable.html"><span class="mini-sub-pro">X-Editable</span></a></li>
-                                <li><a title="Code Editor" href="code-editor.html"><span class="mini-sub-pro">Code Editor</span></a></li>
-                                <li><a title="Tree View" href="tree-view.html"><span class="mini-sub-pro">Tree View</span></a></li>
-                                <li><a title="Preloader" href="preloader.html"><span class="mini-sub-pro">Preloader</span></a></li>
-                                <li><a title="Images Cropper" href="images-cropper.html"><span class="mini-sub-pro">Images Cropper</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-charts icon-wrap"></span> <span class="mini-click-non">Charts</span></a>
-                            <ul class="submenu-angle chart-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Bar Charts" href="bar-charts.html"><span class="mini-sub-pro">Bar Charts</span></a></li>
-                                <li><a title="Line Charts" href="line-charts.html"><span class="mini-sub-pro">Line Charts</span></a></li>
-                                <li><a title="Area Charts" href="area-charts.html"><span class="mini-sub-pro">Area Charts</span></a></li>
-                                <li><a title="Rounded Charts" href="rounded-chart.html"><span class="mini-sub-pro">Rounded Charts</span></a></li>
-                                <li><a title="C3 Charts" href="c3.html"><span class="mini-sub-pro">C3 Charts</span></a></li>
-                                <li><a title="Sparkline Charts" href="sparkline.html"><span class="mini-sub-pro">Sparkline Charts</span></a></li>
-                                <li><a title="Peity Charts" href="peity.html"><span class="mini-sub-pro">Peity Charts</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-data-table icon-wrap"></span> <span class="mini-click-non">Data Tables</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Peity Charts" href="static-table.html"><span class="mini-sub-pro">Static Table</span></a></li>
-                                <li><a title="Data Table" href="data-table.html"><span class="mini-sub-pro">Data Table</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-form icon-wrap"></span> <span class="mini-click-non">Forms Elements</span></a>
-                            <ul class="submenu-angle form-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Basic Form Elements" href="basic-form-element.html"><span class="mini-sub-pro">Bc Form Elements</span></a></li>
-                                <li><a title="Advance Form Elements" href="advance-form-element.html"><span class="mini-sub-pro">Ad Form Elements</span></a></li>
-                                <li><a title="Password Meter" href="password-meter.html"><span class="mini-sub-pro">Password Meter</span></a></li>
-                                <li><a title="Multi Upload" href="multi-upload.html"><span class="mini-sub-pro">Multi Upload</span></a></li>
-                                <li><a title="Text Editor" href="tinymc.html"><span class="mini-sub-pro">Text Editor</span></a></li>
-                                <li><a title="Dual List Box" href="dual-list-box.html"><span class="mini-sub-pro">Dual List Box</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-apps icon-wrap"></span> <span class="mini-click-non">App views</span></a>
-                            <ul class="submenu-angle app-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Notifications" href="notifications.html"><span class="mini-sub-pro">Notifications</span></a></li>
-                                <li><a title="Alerts" href="alerts.html"><span class="mini-sub-pro">Alerts</span></a></li>
-                                <li><a title="Modals" href="modals.html"><span class="mini-sub-pro">Modals</span></a></li>
-                                <li><a title="Buttons" href="buttons.html"><span class="mini-sub-pro">Buttons</span></a></li>
-                                <li><a title="Tabs" href="tabs.html"><span class="mini-sub-pro">Tabs</span></a></li>
-                                <li><a title="Accordion" href="accordion.html"><span class="mini-sub-pro">Accordion</span></a></li>
-                            </ul>
-                        </li>
-                        <li id="removable">
-                            <a class="has-arrow" href="#" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap"></span> <span class="mini-click-non">Pages</span></a>
-                            <ul class="submenu-angle page-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Login" href="login.html"><span class="mini-sub-pro">Login</span></a></li>
-                                <li><a title="Register" href="register.html"><span class="mini-sub-pro">Register</span></a></li>
-                                <li><a title="Lock" href="lock.html"><span class="mini-sub-pro">Lock</span></a></li>
-                                <li><a title="Password Recovery" href="password-recovery.html"><span class="mini-sub-pro">Password Recovery</span></a></li>
-                                <li><a title="404 Page" href="404.html"><span class="mini-sub-pro">404 Page</span></a></li>
-                                <li><a title="500 Page" href="500.html"><span class="mini-sub-pro">500 Page</span></a></li>
-                            </ul>
-                        </li> -->
                     </ul>
                 </nav>
             </div>
@@ -314,25 +162,7 @@
                                     </div>
                                     <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
                                         <div class="header-top-menu tabl-d-n">
-                                            <!-- <ul class="nav navbar-nav mai-top-nav">
-                                                <li class="nav-item"><a href="#" class="nav-link">Home</a>
-                                                </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">About</a>
-                                                </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Services</a>
-                                                </li>
-                                                <li class="nav-item dropdown res-dis-nn">
-                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">Project <span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span></a>
-                                                    <div role="menu" class="dropdown-menu animated zoomIn">
-                                                        <a href="#" class="dropdown-item">Documentation</a>
-                                                        <a href="#" class="dropdown-item">Expert Backend</a>
-                                                        <a href="#" class="dropdown-item">Expert FrontEnd</a>
-                                                        <a href="#" class="dropdown-item">Contact Support</a>
-                                                    </div>
-                                                </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Support</a>
-                                                </li>
-                                            </ul> -->
+                                            
                                         </div>
                                     </div>
                                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
@@ -1326,623 +1156,133 @@
                     </div>
                 </div>
             </div>
-            <!-- Mobile Menu end -->
-            <!-- <div class="breadcome-area">
-                <div class="container-fluid">
+        </div>
+       
+
+        <h2 style="margin-left: 32px;">Create New Project</h2>
+          <div class="containerOne my-5">
+            <div class="task-form-container">
+                <form class="task-form">
+                    <h2 class="form-title">Project Details</h2>
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="breadcome-list">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="breadcome-heading">
-                                            <form role="search" class="sr-input-func">
-                                                <input type="text" placeholder="Search..." class="search-int form-control">
-                                                <a href="#"><i class="fa fa-search"></i></a>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <ul class="breadcome-menu">
-                                            <li><a href="#">Home</a> <span class="bread-slash">/</span>
-                                            </li>
-                                            <li><span class="bread-blod">Dashboard V.1</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="project-name">Project Name</label>
+                                <select id="project-name" name="project-name" class="form-control">
+                                    <option>Project 1</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="assign-to">Country Name</label>
+                                <select id="assign-to" name="assign-to" class="form-control">
+                                    <option>Project Number One</option>
+                                    <option>Project Number Two</option>
+                                    <option>Project Number Three</option>
+                                    <option>Project Number Four</option>
+                                    <option>Project Number Five</option>
+                                    <option>Project Number Six</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="task-name">Project Description</label>
+                                <input type="text" id="task-name" name="task-name" class="form-control" placeholder="Enter project description">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="task-name">Customer Name</label>
+                                <input type="text" id="task-name" name="task-name" class="form-control" placeholder="Enter customer name">
                             </div>
                         </div>
                     </div>
-                </div>
-            </div> -->
-        </div>
-        <!-- Password meter Start -->
-        <div class="password-meter-area mg-b-15">
-            <div class="container-fluid">
-                <div class="row" style="background-color: white;">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="sparkline12-list responsive-mg-b-30"
-                            style="background-color: #f3f6ff;border-radius: 40px;">
-                            <div class="row" style="padding-right:40px;padding-left:40px;">
-                                <div class="col-lg-10 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="breadcome-heading">
-                                        <h1>Projects</h1>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="breadcome-heading">
-                                        <a href="add-new-project.html"><i class="bi bi-plus-circle-fill"
-                                                style="color: #0068ff;font-size: 40px;margin-left: 40px;"></i></a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" style="padding-left:40px;">
-                                <div class="col-lg-10 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="breadcome-heading">
-                                        <form role="search" style="width:100% !important">
-                                            <a href="#" style="    right: 15px !important;
-                                            cursor: pointer;
-                                            position: absolute;
-                                            margin-right: 90%;
-                                            margin-top: 7px;margin-left: 6px;"><i class="fa fa-search"></i></a>
-                                            <input type="text" placeholder="  Search..." class="search-int form-control"
-                                                style="width: 100%;background-color: white;    height: 38px;">
-
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="breadcome-heading" style="
-                                    height: 40px;
-                                    width: 40px;
-                                    background-color: white;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;margin-left: 6px;">
-                                        <h1 style="margin: 0;">
-                                            <i class="bi bi-funnel" style="font-size: 25px;"></i>
-                                        </h1>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="row" style="padding-left:40px;padding-top:40px;color: gray;">
-
-                                <span>Projects </spanp>&nbsp;&nbsp;
-
-                                    <button type="button" class="btn btn-custon-rounded-four btn-default"
-                                        style="color: grey;">Ongoing <i class="bi bi-chevron-down"></i></button>
-
-                                    <span style="margin-left: 60%;">View All</span>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12" style="padding:40px;">
-                                    <div class="analytics-sparkle-line reso-mg-b-30"
-                                        style="border-radius: 40px; background-color:#0068ff;">
-                                        <div class="analytics-content">
-
-                                            <a href="Projects.html" style="text-decoration: none;">
-                                                <div class="single-review-st-text">
-                                                    <div class="review-ctn-hf">
-                                                        <h4 style="color: white;">Project Name </h5>
-                                                            <p style="color: white;">India</p>
-                                                    </div>
-                                                    <div class="review-item-rating"
-                                                        style="height: 55px;width: 55px; border-radius: 12px;background-color: white;">
-                                                        <div class="review-ctn-hf">
-                                                            <h4 style="margin-right: 14px;font-size: 20px;">11</h5>
-                                                                <p
-                                                                    style="margin-left:-8px;font-size: 14px;text-align: left;">
-                                                                    Tasks </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            
-                                            <div class="row" style="margin-top: 5%;">
-
-                                                <div class="analysis-progrebar res-mg-t-30 mg-ub-10 res-mg-b-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n"
-                                                    style="background-color:#0068ff; display: flex; align-items: center; width: 100%; padding: 10px; border-radius: 5px;">
-                                                    <!-- Progress Bar Section (80%) -->
-                                                    <div style="width: 80%; padding: 16px;">
-                                                        <h5 style="color: white;">Start Date : 12/11/2024</h5>
-                                                        <h2 class="storage-right"><span class="counter"
-                                                                style="color: white;">Ongoing</span></h2>
-                                                        <div class="progress progress-mini ug-1"
-                                                            style="background-color: #80b3ff;">
-                                                            <div style="width: 0%;" class="progress-bar"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Icon Section (20%) -->
-                                                    <div
-                                                        style="width: 20%; display: flex; justify-content: center; align-items: center;">
-                                                        <i class="bi bi-person-plus-fill"
-                                                            style="font-size: 42px; color: white;margin-left: 70px;"></i>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12"
-                                    style="padding-right:40px;padding-left:40px;">
-                                    <div class="analytics-sparkle-line reso-mg-b-30"
-                                        style="border-radius: 40px; background-color:#d375fe;">
-                                        <div class="analytics-content">
-                                            <a href="Projects.html" style="text-decoration: none;">
-                                                <div class="single-review-st-text">
-                                                    <div class="review-ctn-hf">
-                                                        <h4 style="color: white;">Project Name </h5>
-                                                            <p style="color: white;">India</p>
-                                                    </div>
-                                                    <div class="review-item-rating"
-                                                        style="height: 55px;width: 55px; border-radius: 12px;background-color: white;">
-                                                        <div class="review-ctn-hf">
-                                                            <h4 style="margin-right: 15px;font-size: 20px;">18</h5>
-                                                                <p
-                                                                    style="margin-left:-8px;font-size: 14px;text-align: left;">
-                                                                    Tasks </p>
-                                                        </div>
     
-    
-    
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            
-                                            <div class="row" style="margin-top: 5%;">
-
-                                                <div class="analysis-progrebar res-mg-t-30 mg-ub-10 res-mg-b-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n"
-                                                    style="background-color:#d375fe; display: flex; align-items: center; width: 100%; padding: 10px; border-radius: 5px;">
-                                                    <!-- Progress Bar Section (80%) -->
-                                                    <div style="width: 80%; padding: 16px;">
-                                                        <h5 style="color: white;">Start Date : 12/11/2024</h5>
-                                                        <h2 class="storage-right"><span class="counter"
-                                                                style="color: white;">Ongoing</span></h2>
-                                                        <div class="progress progress-mini ug-1"
-                                                            style="background-color: #e9baff;">
-                                                            <div style="width: 45%;background: white;"
-                                                                class="progress-bar"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Icon Section (20%) -->
-                                                    <div
-                                                        style="width: 20%; display: flex; justify-content: center; align-items: center;">
-                                                        <i class="bi bi-person-plus-fill"
-                                                            style="font-size: 42px; color: white;margin-left: 70px;"></i>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12" style="padding:40px;">
-                                    <div class="analytics-sparkle-line reso-mg-b-30"
-                                        style="border-radius: 40px; background-color:#fbdb3a;">
-                                        <div class="analytics-content">
-                                            <a href="Projects.html" style="text-decoration: none;">
-                                                <div class="single-review-st-text">
-                                                    <div class="review-ctn-hf">
-                                                        <h4>Project Name </h5>
-                                                            <p>India</p>
-                                                    </div>
-                                                    <div class="review-item-rating"
-                                                        style="height: 55px;width: 55px; border-radius: 12px;background-color: white;">
-                                                        <div class="review-ctn-hf">
-                                                            <h4 style="margin-right: 20px;font-size: 20px;">9</h5>
-                                                                <p
-                                                                    style="margin-left:-8px;font-size: 14px;text-align: left;">
-                                                                    Tasks </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            
-                                            <div class="row" style="margin-top: 5%;">
-
-                                                <div class="analysis-progrebar res-mg-t-30 mg-ub-10 res-mg-b-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n"
-                                                    style="background-color:#fbdb3a; display: flex; align-items: center; width: 100%; padding: 10px; border-radius: 5px;">
-                                                    <!-- Progress Bar Section (80%) -->
-                                                    <div style="width: 80%; padding: 16px;">
-                                                        <h5>Start Date : 12/11/2024</h5>
-                                                        <h2 class="storage-right"><span class="counter">Ongoing</span>
-                                                        </h2>
-                                                        <div class="progress progress-mini ug-1"
-                                                            style="background-color: #fded9d;">
-                                                            <div style="width: 50%;background: white;"
-                                                                class="progress-bar"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Icon Section (20%) -->
-                                                    <div
-                                                        style="width: 20%; display: flex; justify-content: center; align-items: center;">
-                                                        <i class="bi bi-person-plus-fill"
-                                                            style="font-size: 42px; color: white;margin-left: 70px;"></i>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12"
-                                    style="padding-right:40px;padding-left:40px;">
-                                    <div class="analytics-sparkle-line reso-mg-b-30"
-                                        style="border-radius: 40px; background-color:#ec7070;">
-                                        <div class="analytics-content">
-
-                                            <a href="Projects.html" style="text-decoration: none;">
-                                                <div class="single-review-st-text">
-                                                    <div class="review-ctn-hf">
-                                                        <h4 style="color: white;">Project Name </h5>
-                                                            <p style="color: white;">India</p>
-                                                    </div>
-                                                    <div class="review-item-rating"
-                                                        style="height: 55px;width: 55px; border-radius: 12px;background-color: white;">
-                                                        <div class="review-ctn-hf">
-                                                            <h4 style="margin-right: 14px;font-size: 20px;">18</h5>
-                                                                <p
-                                                                    style="margin-left:-8px;font-size: 14px;text-align: left;">
-                                                                    Tasks </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            
-                                            <div class="row" style="margin-top: 5%;">
-
-                                                <div class="analysis-progrebar res-mg-t-30 mg-ub-10 res-mg-b-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n"
-                                                    style="background-color:#ec7070; display: flex; align-items: center; width: 100%; padding: 10px; border-radius: 5px;">
-                                                    <!-- Progress Bar Section (80%) -->
-                                                    <div style="width: 80%; padding-left: 16px;">
-                                                        <h5 style="color: white;">Start Date : 12/11/2024</h5>
-                                                        <h2 class="storage-right"><span class="counter"
-                                                                style="color: white;">Ongoing</span></h2>
-                                                        <div class="progress progress-mini ug-1"
-                                                            style="background-color: #f6b8b8;">
-                                                            <div style="width: 55%;background: white;"
-                                                                class="progress-bar"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Icon Section (20%) -->
-                                                    <div
-                                                        style="width: 20%; display: flex; justify-content: center; align-items: center;">
-                                                        <i class="bi bi-person-plus-fill"
-                                                            style="font-size: 42px; color: white;margin-left: 70px;"></i>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
+                    <h2 class="form-title">Project Assignment</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="estimated-hours">Estimated Hours</label>
+                                <input type="text" id="estimated-hours" name="estimated-hours" class="form-control" placeholder="Enter hours">
                             </div>
+                        </div>
 
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="estimated-hours">Hourly Rate</label>
+                                <input type="text" id="estimated-hours" name="estimated-hours" class="form-control" placeholder="Enter horly rate">
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="start-date">Project Start Date</label>
+                                <input type="date" id="start-date" name="start-date" class="form-control">
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="end-date">Project End Date</label>
+                                <input type="date" id="end-date" name="end-date" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="assign-to">Assign Project Management</label>
+                                <select id="assign-to" name="assign-to" class="form-control">
+                                    <option>Project Management One</option>
+                                    <option>Project Management Two</option>
+                                    <option>Project Management Three</option>
+                                    <option>Project Management Four</option>
+                                    <option>Project Management Five</option>
+                                    <option>Project Management Six</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="estimated-hours">Budget Allocated</label>
+                                <input type="text" id="estimated-hours" name="estimated-hours" class="form-control" placeholder="Enter budgets">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="sparkline11-list">
-                            <div class="sparkline11-hd">
-                                <div class="main-sparkline11-hd">
-                                    <span style="color:#7f7f7f;font-size: 20px;padding: 13px;">All Projects (126)</span>
-                                    <span style="color:#7f7f7f;margin-left: 62%;">View All</span>
-                                </div>
-                            </div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="analytics-sparkle-line reso-mg-b-30"
-                                            style="border-radius: 35px;border: 1px solid #c2d9ff;background-color: #f3f6ff;">
-                                            <div class="analytics-content">
-                                                <p>Completed Projects
-                                                <p>
-                                                <h1>41<span class="tuition-fees">
-                                                        <h1><i class="bi bi-check-circle" style="color: black;"></i>
-                                                        </h1>
-                                                    </span></h1>
 
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="analytics-sparkle-line reso-mg-b-30"
-                                            style="border-radius: 35px;border: 1px solid #c2d9ff;background-color: #f3f6ff;">
-                                            <div class="analytics-content">
-                                                <p>Red falgged Projects
-                                                <p>
-                                                <h1>30<span class="tuition-fees">
-                                                        <h1><i class="bi bi-flag-fill" style="color: black;"></i></h1>
-                                                    </span></h1>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="row" style="padding-top: 25px;">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="analytics-sparkle-line reso-mg-b-30"
-                                            style="border-radius: 35px;border: 1px solid #c2d9ff;background-color: #f3f6ff;">
-                                            <div class="analytics-content">
-                                                <p>Pending Projects
-                                                <p>
-                                                <h1>20<span class="tuition-fees">
-                                                        <h1><i class="bi bi-hourglass" style="color: black;"></i></h1>
-                                                    </span></h1>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="analytics-sparkle-line reso-mg-b-30"
-                                            style="border-radius: 35px;border: 1px solid #c2d9ff;background-color: #f3f6ff;">
-                                            <div class="analytics-content">
-                                                <p>Ongoing Projects
-                                                <p>
-                                                <h1>35<span class="tuition-fees">
-                                                        <img src="/Telge-Project//img/ongoing.svg" alt="">
-                                                    </span></h1>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                    
+    
+                    <!-- <div class="form-row priority-row">
+                        <label>Task Priority</label>
+                        <div class="priority-options">
+                            <label><input type="checkbox" name="priority" value="High" checked> High</label>
+                            <label><input type="checkbox" name="priority" value="Medium"> Medium</label>
+                            <label><input type="checkbox" name="priority" value="Low"> Low</label>
                         </div>
-
-                        <div class="single-review-st-item res-mg-t-30 table-mg-t-pro-n" style="padding: 30px;">
-                            <div class="single-review-st-hd">
-                                <div class="main-sparkline11-hd">
-                                    <span style="font-size: 20px;color: grey;">Ongoing Tasks</span>
-                                    <span style="margin-left: 71%;color:#7f7f7f;">View All</span>
-                                </div>
-
-                            </div>
-                            <div class="single-review-st-text">
-                                <div class="idiv">
-                                    <i class="bi bi-circle-fill i1" style="color:green"></i>
-                                </div>
-                                <div class="review-ctn-hf">
-                                    <h3>Task name</h3>
-                                    <p style="color: grey;">Project Name | Assigned Team Lead</p>
-                                </div>
-                                <div class="review-item-rating">
-                                    <p style="color: green;">Ongoing </p>
-                                </div>
-                            </div>
-                            <div class="single-review-st-text">
-                                <div class="idiv">
-                                    <i class="bi bi-circle-fill i1" style="color:red"></i>
-                                </div>
-                                <div class="review-ctn-hf">
-                                    <h3>Task name</h3>
-                                    <p style="color: grey;">Project Name | Assigned Team Lead</p>
-                                </div>
-                                <div class="review-item-rating">
-                                    <p style="color: red;">Pending </p>
-                                </div>
-                            </div>
-                            <div class="single-review-st-text">
-                                <div class="idiv">
-                                    <i class="bi bi-circle-fill i1" style="color:grey"></i>
-                                </div>
-                                <div class="review-ctn-hf">
-                                    <h3>Task name</h3>
-                                    <p style="color: grey;">Project Name | Assigned Team Lead</p>
-                                </div>
-                                <div class="review-item-rating">
-                                    <p style="color: grey;">Completed </p>
-                                </div>
-                            </div>
-                            <div class="single-review-st-text">
-                                <div class="idiv">
-                                    <i class="bi bi-circle-fill i1" style="color:green"></i>
-                                </div>
-                                <div class="review-ctn-hf">
-                                    <h3>Task name</h3>
-                                    <p style="color: grey;">Project Name | Assigned Team Lead</p>
-                                </div>
-                                <div class="review-item-rating">
-                                    <p style="color: green;">Ongoing </p>
-                                </div>
-                            </div>
-                            <div class="single-review-st-text">
-                                <div class="idiv">
-                                    <i class="bi bi-circle-fill i1" style="color:grey"></i>
-                                </div>
-                                <div class="review-ctn-hf">
-                                    <h3>Task name</h3>
-                                    <p style="color: grey;">Project Name | Assigned Team Lead</p>
-                                </div>
-                                <div class="review-item-rating">
-                                    <p style="color: grey;">Completed </p>
-                                </div>
-                            </div>
-                            <div class="single-review-st-text">
-                                <div class="idiv">
-                                    <i class="bi bi-circle-fill i1" style="color:red"></i>
-                                </div>
-                                <div class="review-ctn-hf">
-                                    <h3>Task name</h3>
-                                    <p style="color: grey;">Project Name | Assigned Team Lead</p>
-                                </div>
-                                <div class="review-item-rating">
-                                    <p style="color: red;">Pending </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- Password meter End-->
-    </div>
-    <section class="container">
-        <div id="userModal" class="modal">
-            <div class="modal-content">
-                <form>
-                    <div class="modal-body">
-                        <div class="task-form-container">
-                            <div class="">
-                                <h2 class="form-title">Project Details</h2>
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="project-name">Project Name</label>
-                                            <input type="text" id="project-name" name="project-name"
-                                                class="form-control" placeholder="Enter project name..." required>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="country">Country</label>
-                                            <select id="country" name="country" class="form-control" required>
-                                                <option value="" disabled selected>Select Country...</option>
-                                                <option value="India">India</option>
-                                                <option value="USA">USA</option>
-                                                <option value="UK">UK</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="project-description">Project Description</label>
-                                            <input type="text" id="project-description" name="project-description"
-                                                class="form-control" placeholder="Enter project description..."
-                                                required>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <h2 class="form-title">Project Assignment</h2>
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="estimated-hours">Estimated Hours</label>
-                                            <select id="estimated-hours" name="estimated-hours" class="form-control"
-                                                required>
-                                                <option value="" disabled selected>Enter Estimated Hours...</option>
-                                                <option value="10">10</option>
-                                                <option value="20">20</option>
-                                                <option value="30">30</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="budget-allocated">Budget Allocated</label>
-                                            <input type="number" id="budget-allocated" name="budget-allocated"
-                                                class="form-control" placeholder="Enter budget allocated..." required>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="start-date">Start Date</label>
-                                            <input type="date" id="start-date" name="start-date" class="form-control"
-                                                required>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="end-date">End Date</label>
-                                            <input type="date" id="end-date" name="end-date" class="form-control"
-                                                required>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="project-manager">Assign Project Manager</label>
-                                            <select id="project-manager" name="project-manager" class="form-control"
-                                                required>
-                                                <option value="" disabled selected>Select Project Manager...</option>
-                                                <option value="Manager1">Manager1</option>
-                                                <option value="Manager2">Manager2</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="attach-document">Attach Document</label>
-                                            <input type="file" id="attach-document" name="attach-document"
-                                                class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-actions" style="text-align: center; margin-top: 20px;">
-                                    <button type="submit" class="btn btn-primary">Create Task</button>
-                                    <button type="button" class="btn btn-danger" id="closeModalBtn"
-                                        data-dismiss="modal">Cancel</button>
-                                </div>
-                            </div>
-                        </div>
+                    </div> -->
+    
+                    <div class="form-actions" style="display: flex; justify-content: center;">
+                        <button type="submit" class="btn btn-primary">Create Task</button>
+                        <button type="button" class="btn btn-secondary">Cancel</button>
                     </div>
                 </form>
             </div>
         </div>
-    </section>
+        
+       
+        
+    </div>
 
-    <script>
-        const openModalBtn = document.getElementById('openModalBtn');
-        const closeModalBtn = document.getElementById('closeModalBtn');
-        const userModal = document.getElementById('userModal');
-
-        // Open Modal
-        openModalBtn.addEventListener('click', () => {
-            userModal.style.display = 'block';
-        });
-
-
-
-        closeModalBtn.addEventListener('click', () => {
-            userModal.style.display = 'none';
-        });
-
-
-        // Close modal when clicking outside the content
-        window.addEventListener('click', (event) => {
-            if (event.target === userModal) {
-                userModal.style.display = 'none';
-            }
-        });
-
-
-
-    </script>
     <!-- jquery
 		============================================ -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -1967,6 +1307,11 @@
     <!-- scrollUp JS
 		============================================ -->
     <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- counterup JS
+		============================================ -->
+    <script src="js/counterup/jquery.counterup.min.js"></script>
+    <script src="js/counterup/waypoints.min.js"></script>
+    <script src="js/counterup/counterup-active.js"></script>
     <!-- mCustomScrollbar JS
 		============================================ -->
     <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -1975,14 +1320,21 @@
 		============================================ -->
     <script src="js/metisMenu/metisMenu.min.js"></script>
     <script src="js/metisMenu/metisMenu-active.js"></script>
-    <!-- pwstrength JS
+    <!-- morrisjs JS
 		============================================ -->
-    <script src="js/password-meter/pwstrength-bootstrap.min.js"></script>
-    <script src="js/password-meter/zxcvbn.js"></script>
-    <script src="js/password-meter/password-meter-active.js"></script>
-    <!-- tab JS
+    <script src="js/morrisjs/raphael-min.js"></script>
+    <script src="js/morrisjs/morris.js"></script>
+    <script src="js/morrisjs/morris-active.js"></script>
+    <!-- morrisjs JS
 		============================================ -->
-    <script src="js/tab.js"></script>
+    <script src="js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
+    <script src="js/sparkline/sparkline-active.js"></script>
+    <!-- calendar JS
+		============================================ -->
+    <script src="js/calendar/moment.min.js"></script>
+    <script src="js/calendar/fullcalendar.min.js"></script>
+    <script src="js/calendar/fullcalendar-active.js"></script>
     <!-- plugins JS
 		============================================ -->
     <script src="js/plugins.js"></script>
@@ -1991,7 +1343,7 @@
     <script src="js/main.js"></script>
     <!-- tawk chat JS
 		============================================ -->
-    <script src="js/tawk-chat.js"></script>
+   
 </body>
 
 </html>
